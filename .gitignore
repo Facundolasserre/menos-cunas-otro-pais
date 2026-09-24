@@ -2,6 +2,15 @@
 .idea/
 .vscode/
 
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
 # Python
 .venv/
 __pycache__/
@@ -17,6 +26,11 @@ data/raw/*
 !data/raw/.gitkeep
 data/interim/*
 !data/interim/.gitkeep
+data/processed/local/*
+!data/processed/local/.gitkeep
+data/**/*.parquet
+data/**/*.duckdb
+data/**/*.db
 
 # Private or copyrighted reference material
 references/course-private/*
@@ -24,4 +38,3 @@ references/course-private/*
 
 # Scratch work
 tmp/
-

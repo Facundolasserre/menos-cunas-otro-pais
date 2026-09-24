@@ -24,3 +24,9 @@ Los archivos crudos e intermedios no se versionan. El repositorio contendrá
 scripts de descarga y transformación, metadatos y tablas derivadas pequeñas que
 sean necesarias para reproducir la visualización.
 
+## 2026-09-24 - Formatos de almacenamiento
+
+Los CSV oficiales se conservan sin cambios en `data/raw/`. La capa normalizada
+se almacena localmente en Parquet para fijar el esquema y simplificar lecturas
+repetidas. Solo los agregados finales pequeños se versionan, preferentemente en
+CSV por su legibilidad y facilidad de revisión en Git.
