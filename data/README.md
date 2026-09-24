@@ -15,3 +15,7 @@ Cada script de descarga deberá registrar origen, fecha, tamaño y checksum. Cad
 tabla procesada deberá poder regenerarse desde las fuentes crudas.
 
 La política completa está en `docs/data-policy.md`.
+
+`source-catalog.csv` contiene las URL oficiales necesarias para reproducir la
+descarga. `scripts/download/download_deis_nacidos_vivos.py` guarda los archivos
+en `raw/` y genera allí un manifiesto local con tamaño y SHA-256.

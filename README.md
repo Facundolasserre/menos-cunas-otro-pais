@@ -53,3 +53,17 @@ Un cambio se publica únicamente después de revisar su diff, ejecutar los
 controles aplicables y verificar visualmente cualquier salida gráfica. Los hitos
 se etiquetarán como `v0.1-data-audit`, `v0.2-storyboard` y `v1.0-submission`.
 
+## Entorno local
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install -r requirements.txt
+```
+
+Las descargas permanecen fuera de Git:
+
+```bash
+python scripts/download/download_deis_nacidos_vivos.py
+python scripts/validation/audit_deis_nacidos_vivos.py
+```

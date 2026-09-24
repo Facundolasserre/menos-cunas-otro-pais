@@ -1,0 +1,13 @@
+resource_id,year,kind,url,filename,bytes,sha256
+deis_nacidos_2024,2024,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/datos_sobre_nacidos_vivos_2024.csv,nacidos_vivos_2024.csv,1668694,ac0ac5ff8794f73c57a02b494b97401431ce901d4f5f0a5df877f372da9d85d2
+deis_nacidos_2023,2023,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb23.csv,nacidos_vivos_2023.csv,806860,9adc914de80ef4ece1702fa0b7a1d1df33aad7fcc68e9759066d1c9ee4113c29
+deis_nacidos_2022,2022,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb22_0.csv,nacidos_vivos_2022.csv,836518,70a82bc9a118fb7cfc4d3af5f86c024925a73a0fb955443e1a8fbfa67d40bfef
+deis_nacidos_2021,2021,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb21_0.csv,nacidos_vivos_2021.csv,870232,301d597d69ecc828c10bd2ec416ae473133f5e122f9a720d0302e72a132101c1
+deis_nacidos_2020,2020,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb20_0.csv,nacidos_vivos_2020.csv,936290,5694e2b5eff25e377a41a86866208886a8f14941d8e4f1e92734e8afe52472ea
+deis_nacidos_2019,2019,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb19.csv,nacidos_vivos_2019.csv,1144000,12d50d58017e58b0b2a80b97bf355e3a922df2bc4cdcd4a1b26297f32095502f
+deis_nacidos_2018,2018,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb18.csv,nacidos_vivos_2018.csv,1204877,89732bf30bea35a4670980042a6dfb3d94250b383c144939e2ccd55690821cb0
+deis_nacidos_2017,2017,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb17.csv,nacidos_vivos_2017.csv,1254929,bf7805e7bc1e9098f0d0b8753d9ed69113289d301858b4c00172c4d704ee78d0
+deis_nacidos_2016,2016,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb16.csv,nacidos_vivos_2016.csv,1208895,2d1028db170a4c41943a6348805322bbe98925c538053c7d2369d08a23a66771
+deis_nacidos_2015,2015,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb15.csv,nacidos_vivos_2015.csv,1228228,1c40fb2af55b0d0e66ef663872a2a1b338683e92892b72e6d302ecd859449706
+deis_nacidos_2014,2014,csv,https://www.argentina.gob.ar/sites/default/files/2021/03/nacweb14.csv,nacidos_vivos_2014.csv,1262409,57113304d28a5e1e680f90ea8ba5931d167e071efea3e5cfa397388a6fa8e2e4
+deis_nacidos_dictionary,,xlsx,https://www.argentina.gob.ar/sites/default/files/2021/03/descnac.xlsx,nacidos_vivos_diccionario.xlsx,12660,1cc6f1575f47f94b3a38fba8ce7ca1a834a88a0eb983f3081fadd3b75a108f7f

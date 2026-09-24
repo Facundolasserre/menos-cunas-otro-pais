@@ -15,3 +15,9 @@ Antes de crear un commit se ejecuta:
 ```bash
 bash scripts/validation/check_repo_safety.sh
 ```
+
+La primera auditoría estructural de DEIS se ejecuta con:
+
+```bash
+python scripts/validation/audit_deis_nacidos_vivos.py
+```
