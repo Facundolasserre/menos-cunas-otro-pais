@@ -1,0 +1,27 @@
+.DS_Store
+.idea/
+.vscode/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Local and reproducible data
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+
+# Private or copyrighted reference material
+references/course-private/*
+!references/course-private/.gitkeep
+
+# Scratch work
+tmp/
+

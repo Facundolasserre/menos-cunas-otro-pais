@@ -1,0 +1,26 @@
+# Registro de decisiones
+
+## 2026-09-24 - Tema
+
+Se seleccionó la transformación de los nacimientos registrados en Argentina
+entre 2014 y 2024. La decisión prioriza actualidad, relevancia pública, calidad
+de las fuentes, claridad narrativa, novedad respecto de ganadores anteriores y
+factibilidad dentro del plazo del concurso.
+
+## 2026-09-24 - Categoría primaria
+
+Se prioriza Historia visual. El plazo disponible y la fuerza de una afirmación
+central favorecen concentrar el esfuerzo en análisis, síntesis y terminación
+gráfica antes que en infraestructura interactiva.
+
+## 2026-09-24 - Materiales de la materia
+
+Los PDFs originales permanecen fuera de Git por tamaño y posibles restricciones
+de redistribución. Se versionan principios derivados, referencias y controles.
+
+## 2026-09-24 - Política de datos
+
+Los archivos crudos e intermedios no se versionan. El repositorio contendrá
+scripts de descarga y transformación, metadatos y tablas derivadas pequeñas que
+sean necesarias para reproducir la visualización.
+
