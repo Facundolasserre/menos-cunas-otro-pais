@@ -4,6 +4,9 @@ Los materiales originales de la materia permanecen locales y no se suben al
 repositorio. La síntesis operativa se encuentra en
 `docs/design-principles.md` y `docs/visual-checklist.md`.
 
+Las versiones locales efectivamente revisadas están identificadas por cantidad
+de páginas, tamaño y checksum en `references/course-materials-manifest.md`.
+
 Material consultado:
 
 - `ET - TVDQI - Capitulo 1.pdf`
@@ -14,4 +17,3 @@ Material consultado:
 - `Infovis - S.S. Stevens - Level of measurement - Escalas de Medición-1.pdf`
 - `Visual and statistical thinking _ displays of evidence for making decisions - Edward Tufte.pdf`
 - `infovis - Visualization Pipelines-1.pdf`
-

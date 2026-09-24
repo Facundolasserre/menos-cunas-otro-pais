@@ -30,3 +30,11 @@ Los CSV oficiales se conservan sin cambios en `data/raw/`. La capa normalizada
 se almacena localmente en Parquet para fijar el esquema y simplificar lecturas
 repetidas. Solo los agregados finales pequeños se versionan, preferentemente en
 CSV por su legibilidad y facilidad de revisión en Git.
+
+## 2026-09-24 - Revisión del material correcto de la materia
+
+Se revisaron las versiones locales definitivas de los ocho documentos de
+Visualización de la Información, con 241 páginas en total. La revisión confirmó
+la guía operativa ya documentada: separar exploración y explicación, estructurar
+el pipeline completo, respetar escalas de medición, privilegiar comparaciones
+controladas y auditar agregaciones, fuentes, errores y explicaciones alternativas.

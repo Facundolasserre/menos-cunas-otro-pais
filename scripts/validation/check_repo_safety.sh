@@ -28,6 +28,14 @@ while IFS= read -r path; do
       ;;
   esac
 
+  case "$path" in
+    */*)
+      ;;
+    *.pdf)
+      fail "PDF local en la raíz del repositorio: $path"
+      ;;
+  esac
+
   if [[ -f "$path" ]]; then
     size="$(wc -c < "$path" | tr -d ' ')"
     if (( size > max_bytes )); then

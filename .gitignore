@@ -35,6 +35,7 @@ data/**/*.db
 # Private or copyrighted reference material
 references/course-private/*
 !references/course-private/.gitkeep
+/*.pdf
 
 # Scratch work
 tmp/
