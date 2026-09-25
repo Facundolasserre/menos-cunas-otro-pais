@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Download the DEIS live-birth files without modifying existing raw data."""
+"""Download catalogued project sources without modifying existing raw data."""
 
 from __future__ import annotations
 

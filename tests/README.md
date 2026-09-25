@@ -18,6 +18,9 @@ Los controles de datos ya implementados son:
   falla ante cualquier diferencia con las fuentes o los controles oficiales;
 - `scripts/validation/validate_core_indicators.py`, que reconcilia las tablas
   nacional, etaria y territorial y recalcula cambios, participaciones y rangos;
+- `scripts/validation/validate_age_territory_indicators.py`, que reconcilia las
+  distribuciones etarias provinciales, sus ceros explícitos, participaciones,
+  grupos modales y cambios 2014–2024;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 

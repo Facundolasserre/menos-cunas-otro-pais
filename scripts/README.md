@@ -44,3 +44,14 @@ El primer análisis descriptivo y su validación se ejecutan con:
 
 Generan cinco tablas pequeñas para las tendencias nacional, etaria y territorial,
 además de `docs/exploratory-findings.md`.
+
+El análisis territorial de la composición etaria y su validación se ejecutan con:
+
+```bash
+.venv/bin/python scripts/analysis/build_age_territory_indicators.py
+.venv/bin/python scripts/validation/validate_age_territory_indicators.py
+```
+
+Generan tres tablas procesadas y `docs/age-territory-findings.md`. La validación
+reconstruye los conteos desde el Parquet, comprueba 384 combinaciones de los años
+extremos —incluidas dos celdas con cero— y verifica las 24 trayectorias.

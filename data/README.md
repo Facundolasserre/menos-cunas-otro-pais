@@ -38,4 +38,11 @@ Las tablas `national_trend.csv`, `age_trend.csv`,
 Separan conteos, participaciones, cambios y contribuciones para evitar que una
 misma medida cumpla funciones incompatibles.
 
+Las tablas `province_age_composition_trend.csv`,
+`province_age_distribution_2014_2024.csv` y
+`province_age_shift_2014_2024.csv` forman la segunda capa. Completan
+explícitamente con cero las combinaciones provincia–edad sin casos, separan edad
+desconocida de los denominadores y permiten auditar el desplazamiento etario en
+cada jurisdicción.
+
 Ningún archivo de `raw/`, `interim/` ni `processed/local/` debe versionarse.

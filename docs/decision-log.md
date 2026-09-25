@@ -53,3 +53,20 @@ La entrega se desarrollará como una Historia visual estática de una página, c
 varios gráficos coordinados dentro de una única composición narrativa. Se
 exportará en PDF y PNG. Las anomalías que afecten cifras o interpretación serán
 visibles en la obra; las restantes quedarán en la metodología ampliada.
+
+## 2026-09-24 - Diferenciación frente a antecedentes
+
+El informe oficial *Natalidad y educación en Argentina. Perspectivas a futuro*
+ya desarrolla la relación entre natalidad, matrícula y territorio. Para evitar
+una réplica, el proyecto no centrará su aporte en proyectar escuelas ni copiará
+su mapa. El eje original será el desplazamiento territorial de la composición
+por edad materna, actualizado con DEIS hasta 2024. La educación se mantendrá
+como consecuencia contextual respaldada por una fuente externa.
+
+## 2026-09-24 - Denominadores poblacionales
+
+Las proyecciones vigentes basadas en Censo 2022 comienzan en 2022; las series
+anteriores se basan en Censo 2010 y fueron reemplazadas. No se construirá una
+tasa 2014–2024 empalmando revisiones incompatibles. Las comparaciones principales
+seguirán siendo conteos registrados y composiciones dentro de edades conocidas,
+con esa limitación visible.

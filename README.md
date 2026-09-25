@@ -13,9 +13,11 @@ sobre la estructura demográfica del país?
 
 Fuentes 2014–2024 descargadas, auditadas, normalizadas y conciliadas con 41
 controles del Anuario DEIS 2024. El primer análisis descriptivo de magnitud,
-territorio y edad está validado. La entrega se plantea como una Historia visual
-estática de una página. El título es provisorio y toda explicación causal
-permanece como hipótesis hasta contar con evidencia compatible.
+territorio y edad está validado. El análisis ampliado confirma un cambio de
+composición etaria en las 24 jurisdicciones. La entrega se plantea como una
+Historia visual estática de una página, diferenciada de las proyecciones
+educativas oficiales ya publicadas. El título es provisorio y no se atribuyen
+causas sin evidencia compatible.
 
 ## Principios de trabajo
 
@@ -46,7 +48,8 @@ tests/         Controles automáticos de integridad
 - [DEIS - Nacidos vivos](https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos)
 - [DEIS - Estadísticas vitales 2024](https://www.argentina.gob.ar/sites/default/files/serie_5_nro_68_anuario_vitales_v4_revisada_ok.pdf)
 - [INDEC - Censo 2022](https://www.indec.gob.ar/indec/web/Nivel4-Tema-2-41-165)
-- [INDEC - Proyecciones](https://censo.gob.ar/index.php/proyecciones/)
+- [INDEC - Proyecciones 2022–2040](https://www.indec.gob.ar/indec/web/Nivel3-Tema-2-24)
+- [DNP - Natalidad y educación en Argentina](https://www.argentina.gob.ar/node/477046)
 - [Concurso Contar con Datos](https://www.udesa.edu.ar/contar-con-datos)
 
 ## Flujo de cambios
