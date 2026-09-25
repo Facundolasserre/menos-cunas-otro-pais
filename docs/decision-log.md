@@ -46,3 +46,10 @@ se señalan un tipo de parto vacío en 2017, seis casos con código de sexo 3 no
 documentado en 2024 y 48 nacimientos con la combinación menos de 22 semanas y
 2.500 gramos o más. Cada caso se excluye únicamente del análisis que afectaría,
 manteniendo intactos los totales por año, territorio y edad.
+
+## 2026-09-24 - Formato de la obra
+
+La entrega se desarrollará como una Historia visual estática de una página, con
+varios gráficos coordinados dentro de una única composición narrativa. Se
+exportará en PDF y PNG. Las anomalías que afecten cifras o interpretación serán
+visibles en la obra; las restantes quedarán en la metodología ampliada.

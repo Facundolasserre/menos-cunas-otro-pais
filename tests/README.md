@@ -16,6 +16,8 @@ Los controles de datos ya implementados son:
   crudos y sus checksums;
 - `scripts/validation/validate_normalized_data.py`, que valida el Parquet y
   falla ante cualquier diferencia con las fuentes o los controles oficiales;
+- `scripts/validation/validate_core_indicators.py`, que reconcilia las tablas
+  nacional, etaria y territorial y recalcula cambios, participaciones y rangos;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 

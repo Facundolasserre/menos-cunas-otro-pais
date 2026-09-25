@@ -32,4 +32,10 @@ Git.
 peso, además de los controles transcritos del anuario 2024. `processed/`
 contiene únicamente reportes de validación pequeños, aptos para revisión en Git.
 
+Las tablas `national_trend.csv`, `age_trend.csv`,
+`age_change_2014_2024.csv`, `residence_trend.csv` y
+`province_change_2014_2024.csv` son la primera capa analítica de la historia.
+Separan conteos, participaciones, cambios y contribuciones para evitar que una
+misma medida cumpla funciones incompatibles.
+
 Ningún archivo de `raw/`, `interim/` ni `processed/local/` debe versionarse.

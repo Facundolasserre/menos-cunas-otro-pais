@@ -34,3 +34,13 @@ La primera orden genera un Parquet local y no versionado. La segunda verifica
 esquema, dominios, duplicados, sumas, texto, banderas de calidad y controles
 oficiales de 2024; luego regenera los CSV pequeños de `data/processed/` y
 `docs/data-quality.md`.
+
+El primer análisis descriptivo y su validación se ejecutan con:
+
+```bash
+.venv/bin/python scripts/analysis/build_core_indicators.py
+.venv/bin/python scripts/validation/validate_core_indicators.py
+```
+
+Generan cinco tablas pequeñas para las tendencias nacional, etaria y territorial,
+además de `docs/exploratory-findings.md`.

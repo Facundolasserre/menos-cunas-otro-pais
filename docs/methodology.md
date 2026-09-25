@@ -29,11 +29,13 @@ Documento vivo. Registra sólo decisiones efectivamente implementadas.
    contra las tablas 1, 2, 3, 5, 7 y 13 del Anuario DEIS 2024.
 7. Auditar faltantes, categorías sin especificar, dominios, duplicados,
    codificación y combinaciones gestación-peso físicamente improbables.
-8. Calcular indicadores y análisis de sensibilidad.
+8. Calcular indicadores descriptivos y análisis de sensibilidad; la primera
+   capa nacional, etaria y territorial ya está implementada.
 9. Exportar únicamente tablas derivadas necesarias para la obra.
 
-Los pasos 1–7 están implementados. El detalle del esquema está en
-`docs/normalized-schema.md` y los resultados en `docs/data-quality.md`.
+Los pasos 1–7 y la primera capa del paso 8 están implementados. El detalle del
+esquema está en `docs/normalized-schema.md`, los controles en
+`docs/data-quality.md` y los hallazgos en `docs/exploratory-findings.md`.
 
 ## Decisiones de limpieza
 

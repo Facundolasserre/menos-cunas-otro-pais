@@ -12,8 +12,9 @@ sobre la estructura demográfica del país?
 ## Estado
 
 Fuentes 2014–2024 descargadas, auditadas, normalizadas y conciliadas con 41
-controles del Anuario DEIS 2024. La siguiente fase es el análisis exploratorio de
-magnitud, territorio y edad. El título es provisorio y toda explicación causal
+controles del Anuario DEIS 2024. El primer análisis descriptivo de magnitud,
+territorio y edad está validado. La entrega se plantea como una Historia visual
+estática de una página. El título es provisorio y toda explicación causal
 permanece como hipótesis hasta contar con evidencia compatible.
 
 ## Principios de trabajo

@@ -1,0 +1,287 @@
+year,province_code,province_label,residence_scope,registered_births,share_of_national_births
+2014,02,Ciudad Aut. de Buenos Aires,argentina_province,43716,0.0562616794
+2014,06,Buenos Aires,argentina_province,294329,0.3787959517
+2014,10,Catamarca,argentina_province,6840,0.0088029529
+2014,14,Córdoba,argentina_province,59246,0.0762485007
+2014,18,Corrientes,argentina_province,20933,0.0269403819
+2014,22,Chaco,argentina_province,22798,0.0293406022
+2014,26,Chubut,argentina_province,9881,0.0127166633
+2014,30,Entre Ríos,argentina_province,23318,0.0300098325
+2014,34,Formosa,argentina_province,12531,0.0161271641
+2014,38,Jujuy,argentina_province,14025,0.0180499143
+2014,42,La Pampa,argentina_province,5619,0.0072315485
+2014,46,La Rioja,argentina_province,6287,0.0080912521
+2014,50,Mendoza,argentina_province,36098,0.0464574550
+2014,54,Misiones,argentina_province,27511,0.0354061456
+2014,58,Neuquén,argentina_province,11933,0.0153575492
+2014,62,Río Negro,argentina_province,12339,0.0158800636
+2014,66,Salta,argentina_province,28346,0.0364807751
+2014,70,San Juan,argentina_province,15528,0.0199842473
+2014,74,San Luis,argentina_province,7932,0.0102083366
+2014,78,Santa Cruz,argentina_province,6156,0.0079226576
+2014,82,Santa Fe,argentina_province,57798,0.0743849516
+2014,86,Santiago del Estero,argentina_province,18180,0.0233973220
+2014,90,Tucumán,argentina_province,30393,0.0391152260
+2014,94,Tierra del Fuego,argentina_province,3038,0.0039098495
+2014,98,Otro país,other_country,381,0.0004903399
+2014,99,Lugar no especificado,unspecified,1856,0.0023886375
+2015,02,Ciudad Aut. de Buenos Aires,argentina_province,41866,0.0543686042
+2015,06,Buenos Aires,argentina_province,287523,0.3733870968
+2015,10,Catamarca,argentina_province,6835,0.0088761623
+2015,14,Córdoba,argentina_province,58558,0.0760454002
+2015,18,Corrientes,argentina_province,20658,0.0268271778
+2015,22,Chaco,argentina_province,25952,0.0337021453
+2015,26,Chubut,argentina_province,9858,0.0128019324
+2015,30,Entre Ríos,argentina_province,23572,0.0306113968
+2015,34,Formosa,argentina_province,12331,0.0160134538
+2015,38,Jujuy,argentina_province,13265,0.0172263779
+2015,42,La Pampa,argentina_province,5398,0.0070100255
+2015,46,La Rioja,argentina_province,6274,0.0081476287
+2015,50,Mendoza,argentina_province,35476,0.0460703340
+2015,54,Misiones,argentina_province,27168,0.0352812841
+2015,58,Neuquén,argentina_province,11838,0.0153732274
+2015,62,Río Negro,argentina_province,12734,0.0165368033
+2015,66,Salta,argentina_province,28379,0.0368539297
+2015,70,San Juan,argentina_province,15168,0.0196976780
+2015,74,San Luis,argentina_province,8101,0.0105202327
+2015,78,Santa Cruz,argentina_province,6336,0.0082281440
+2015,82,Santa Fe,argentina_province,57439,0.0745922290
+2015,86,Santiago del Estero,argentina_province,19061,0.0247532596
+2015,90,Tucumán,argentina_province,30188,0.0392031583
+2015,94,Tierra del Fuego,argentina_province,3037,0.0039439510
+2015,98,Otro país,other_country,364,0.0004727027
+2015,99,Lugar no especificado,unspecified,2661,0.0034556646
+2016,02,Ciudad Aut. de Buenos Aires,argentina_province,40136,0.0551292177
+2016,06,Buenos Aires,argentina_province,272471,0.3742553586
+2016,10,Catamarca,argentina_province,6685,0.0091822509
+2016,14,Córdoba,argentina_province,56460,0.0775512166
+2016,18,Corrientes,argentina_province,20033,0.0275165342
+2016,22,Chaco,argentina_province,22023,0.0302499193
+2016,26,Chubut,argentina_province,9608,0.0131971677
+2016,30,Entre Ríos,argentina_province,22195,0.0304861717
+2016,34,Formosa,argentina_province,11369,0.0156160075
+2016,38,Jujuy,argentina_province,12380,0.0170046770
+2016,42,La Pampa,argentina_province,5222,0.0071727321
+2016,46,La Rioja,argentina_province,6182,0.0084913500
+2016,50,Mendoza,argentina_province,33378,0.0458466969
+2016,54,Misiones,argentina_province,25319,0.0347771742
+2016,58,Neuquén,argentina_province,11238,0.0154360711
+2016,62,Río Negro,argentina_province,11924,0.0163783335
+2016,66,Salta,argentina_province,26273,0.0360875507
+2016,70,San Juan,argentina_province,14017,0.0192531952
+2016,74,San Luis,argentina_province,7504,0.0103071968
+2016,78,Santa Cruz,argentina_province,6119,0.0084048157
+2016,82,Santa Fe,argentina_province,55971,0.0768795456
+2016,86,Santiago del Estero,argentina_province,17515,0.0240579093
+2016,90,Tucumán,argentina_province,28306,0.0388799989
+2016,94,Tierra del Fuego,argentina_province,2829,0.0038858022
+2016,98,Otro país,other_country,251,0.0003447636
+2016,99,Lugar no especificado,unspecified,2627,0.0036083430
+2017,02,Ciudad Aut. de Buenos Aires,argentina_province,35840,0.0508650897
+2017,06,Buenos Aires,argentina_province,262721,0.3728606930
+2017,10,Catamarca,argentina_province,6392,0.0090716979
+2017,14,Córdoba,argentina_province,54804,0.0777793074
+2017,18,Corrientes,argentina_province,19987,0.0283660867
+2017,22,Chaco,argentina_province,23125,0.0328196205
+2017,26,Chubut,argentina_province,9023,0.0128056837
+2017,30,Entre Ríos,argentina_province,21966,0.0311747366
+2017,34,Formosa,argentina_province,11591,0.0164502582
+2017,38,Jujuy,argentina_province,11785,0.0167255882
+2017,42,La Pampa,argentina_province,4979,0.0070663304
+2017,46,La Rioja,argentina_province,5895,0.0083663422
+2017,50,Mendoza,argentina_province,31420,0.0445921071
+2017,54,Misiones,argentina_province,25738,0.0365280602
+2017,58,Neuquén,argentina_province,10397,0.0147557014
+2017,62,Río Negro,argentina_province,11513,0.0163395585
+2017,66,Salta,argentina_province,27014,0.0383389937
+2017,70,San Juan,argentina_province,13705,0.0194505038
+2017,74,San Luis,argentina_province,7225,0.0102539139
+2017,78,Santa Cruz,argentina_province,5747,0.0081562966
+2017,82,Santa Fe,argentina_province,53206,0.0755113829
+2017,86,Santiago del Estero,argentina_province,17783,0.0252381108
+2017,90,Tucumán,argentina_province,27369,0.0388428192
+2017,94,Tierra del Fuego,argentina_province,2718,0.0038574585
+2017,98,Otro país,other_country,171,0.0002426878
+2017,99,Lugar no especificado,unspecified,2495,0.0035409709
+2018,02,Ciudad Aut. de Buenos Aires,argentina_province,35467,0.0517468784
+2018,06,Buenos Aires,argentina_province,251377,0.3667627671
+2018,10,Catamarca,argentina_province,6696,0.0097695632
+2018,14,Córdoba,argentina_province,53569,0.0781579646
+2018,18,Corrientes,argentina_province,19855,0.0289687391
+2018,22,Chaco,argentina_province,24783,0.0361587642
+2018,26,Chubut,argentina_province,8539,0.0124585275
+2018,30,Entre Ríos,argentina_province,21283,0.0310522123
+2018,34,Formosa,argentina_province,11809,0.0172295059
+2018,38,Jujuy,argentina_province,11807,0.0172265879
+2018,42,La Pampa,argentina_province,4773,0.0069638777
+2018,46,La Rioja,argentina_province,5673,0.0082769910
+2018,50,Mendoza,argentina_province,30089,0.0439002968
+2018,54,Misiones,argentina_province,24858,0.0362681903
+2018,58,Neuquén,argentina_province,10122,0.0147681480
+2018,62,Río Negro,argentina_province,10671,0.0155691471
+2018,66,Salta,argentina_province,25206,0.0367759274
+2018,70,San Juan,argentina_province,13498,0.0196937820
+2018,74,San Luis,argentina_province,7050,0.0102860544
+2018,78,Santa Cruz,argentina_province,5111,0.0074570247
+2018,82,Santa Fe,argentina_province,51413,0.0750123287
+2018,86,Santiago del Estero,argentina_province,18074,0.0263702338
+2018,90,Tucumán,argentina_province,27915,0.0407283986
+2018,94,Tierra del Fuego,argentina_province,2688,0.0039218318
+2018,98,Otro país,other_country,192,0.0002801308
+2018,99,Lugar no especificado,unspecified,2876,0.0041961266
+2019,02,Ciudad Aut. de Buenos Aires,argentina_province,33981,0.0543312639
+2019,06,Buenos Aires,argentina_province,227596,0.3638968344
+2019,10,Catamarca,argentina_province,5733,0.0091663322
+2019,14,Córdoba,argentina_province,50929,0.0814289437
+2019,18,Corrientes,argentina_province,18144,0.0290099306
+2019,22,Chaco,argentina_province,22176,0.0354565818
+2019,26,Chubut,argentina_province,7861,0.0125687315
+2019,30,Entre Ríos,argentina_province,19232,0.0307495032
+2019,34,Formosa,argentina_province,10250,0.0163884363
+2019,38,Jujuy,argentina_province,10352,0.0165515212
+2019,42,La Pampa,argentina_province,4290,0.0068591602
+2019,46,La Rioja,argentina_province,5320,0.0085059982
+2019,50,Mendoza,argentina_province,27403,0.0438138849
+2019,54,Misiones,argentina_province,23013,0.0367948376
+2019,58,Neuquén,argentina_province,9456,0.0151189321
+2019,62,Río Negro,argentina_province,9810,0.0156849327
+2019,66,Salta,argentina_province,22972,0.0367292838
+2019,70,San Juan,argentina_province,12554,0.0200722370
+2019,74,San Luis,argentina_province,6610,0.0105685428
+2019,78,Santa Cruz,argentina_province,4732,0.0075658615
+2019,82,Santa Fe,argentina_province,47088,0.0752876770
+2019,86,Santiago del Estero,argentina_province,16972,0.0271360528
+2019,90,Tucumán,argentina_province,25189,0.0402739827
+2019,94,Tierra del Fuego,argentina_province,2398,0.0038340947
+2019,98,Otro país,other_country,158,0.0002526218
+2019,99,Lugar no especificado,unspecified,1222,0.0019538214
+2020,02,Ciudad Aut. de Buenos Aires,argentina_province,28103,0.0526965173
+2020,06,Buenos Aires,argentina_province,191474,0.3590368630
+2020,10,Catamarca,argentina_province,4950,0.0092818475
+2020,14,Córdoba,argentina_province,44348,0.0831578533
+2020,18,Corrientes,argentina_province,16547,0.0310276224
+2020,22,Chaco,argentina_province,18488,0.0346672317
+2020,26,Chubut,argentina_province,6991,0.0131089689
+2020,30,Entre Ríos,argentina_province,17012,0.0318995535
+2020,34,Formosa,argentina_province,9218,0.0172848627
+2020,38,Jujuy,argentina_province,9145,0.0171479789
+2020,42,La Pampa,argentina_province,3743,0.0070185768
+2020,46,La Rioja,argentina_province,4562,0.0085543007
+2020,50,Mendoza,argentina_province,23455,0.0439809563
+2020,54,Misiones,argentina_province,21137,0.0396344265
+2020,58,Neuquén,argentina_province,8141,0.0152653577
+2020,62,Río Negro,argentina_province,8689,0.0162929239
+2020,66,Salta,argentina_province,18026,0.0338009259
+2020,70,San Juan,argentina_province,10942,0.0205175708
+2020,74,San Luis,argentina_province,5993,0.0112375984
+2020,78,Santa Cruz,argentina_province,4126,0.0077367481
+2020,82,Santa Fe,argentina_province,39662,0.0743710376
+2020,86,Santiago del Estero,argentina_province,13675,0.0256422757
+2020,90,Tucumán,argentina_province,21640,0.0405776122
+2020,94,Tierra del Fuego,argentina_province,1886,0.0035364777
+2020,98,Otro país,other_country,80,0.0001500097
+2020,99,Lugar no especificado,unspecified,1266,0.0023739028
+2021,02,Ciudad Aut. de Buenos Aires,argentina_province,26044,0.0491587296
+2021,06,Buenos Aires,argentina_province,190096,0.3588111606
+2021,10,Catamarca,argentina_province,4764,0.0089921743
+2021,14,Córdoba,argentina_province,44159,0.0833512648
+2021,18,Corrientes,argentina_province,15743,0.0297153233
+2021,22,Chaco,argentina_province,18673,0.0352457748
+2021,26,Chubut,argentina_province,6426,0.0121292427
+2021,30,Entre Ríos,argentina_province,16402,0.0309592030
+2021,34,Formosa,argentina_province,8818,0.0166442051
+2021,38,Jujuy,argentina_province,8434,0.0159193951
+2021,42,La Pampa,argentina_province,3573,0.0067441307
+2021,46,La Rioja,argentina_province,4605,0.0086920577
+2021,50,Mendoza,argentina_province,22903,0.0432300102
+2021,54,Misiones,argentina_province,20584,0.0388528371
+2021,58,Neuquén,argentina_province,7769,0.0146641902
+2021,62,Río Negro,argentina_province,8033,0.0151624971
+2021,66,Salta,argentina_province,20366,0.0384413565
+2021,70,San Juan,argentina_province,11147,0.0210402534
+2021,74,San Luis,argentina_province,6007,0.0113383693
+2021,78,Santa Cruz,argentina_province,3536,0.0066742923
+2021,82,Santa Fe,argentina_province,43310,0.0817487552
+2021,86,Santiago del Estero,argentina_province,13623,0.0257137680
+2021,90,Tucumán,argentina_province,21987,0.0415010363
+2021,94,Tierra del Fuego,argentina_province,1753,0.0033088332
+2021,98,Otro país,other_country,73,0.0001377894
+2021,99,Lugar no especificado,unspecified,966,0.0018233502
+2022,02,Ciudad Aut. de Buenos Aires,argentina_province,24690,0.0498490798
+2022,06,Buenos Aires,argentina_province,174074,0.3514551934
+2022,10,Catamarca,argentina_province,4784,0.0096588902
+2022,14,Córdoba,argentina_province,41588,0.0839661212
+2022,18,Corrientes,argentina_province,14405,0.0290836774
+2022,22,Chaco,argentina_province,18106,0.0365559919
+2022,26,Chubut,argentina_province,6161,0.0124390515
+2022,30,Entre Ríos,argentina_province,15107,0.0305010145
+2022,34,Formosa,argentina_province,8484,0.0171291856
+2022,38,Jujuy,argentina_province,7819,0.0157865514
+2022,42,La Pampa,argentina_province,3499,0.0070644767
+2022,46,La Rioja,argentina_province,4391,0.0088654236
+2022,50,Mendoza,argentina_province,21283,0.0429703510
+2022,54,Misiones,argentina_province,19575,0.0395219011
+2022,58,Neuquén,argentina_province,7510,0.0151626808
+2022,62,Río Negro,argentina_province,8066,0.0162852441
+2022,66,Salta,argentina_province,18719,0.0377936381
+2022,70,San Juan,argentina_province,10421,0.0210399863
+2022,74,San Luis,argentina_province,5561,0.0112276522
+2022,78,Santa Cruz,argentina_province,3665,0.0073996305
+2022,82,Santa Fe,argentina_province,41442,0.0836713474
+2022,86,Santiago del Estero,argentina_province,11677,0.0235758487
+2022,90,Tucumán,argentina_province,20616,0.0416236788
+2022,94,Tierra del Fuego,argentina_province,1547,0.0031233911
+2022,98,Otro país,other_country,117,0.0002362229
+2022,99,Lugar no especificado,unspecified,1988,0.0040137696
+2023,02,Ciudad Aut. de Buenos Aires,argentina_province,23988,0.0520457711
+2023,06,Buenos Aires,argentina_province,162380,0.3523091677
+2023,10,Catamarca,argentina_province,4248,0.0092167098
+2023,14,Córdoba,argentina_province,38126,0.0827204048
+2023,18,Corrientes,argentina_province,14253,0.0309241444
+2023,22,Chaco,argentina_province,16769,0.0363830055
+2023,26,Chubut,argentina_province,5434,0.0117899250
+2023,30,Entre Ríos,argentina_province,14073,0.0305336058
+2023,34,Formosa,argentina_province,8250,0.0178996837
+2023,38,Jujuy,argentina_province,7365,0.0159795358
+2023,42,La Pampa,argentina_province,3238,0.0070253546
+2023,46,La Rioja,argentina_province,4184,0.0090778517
+2023,50,Mendoza,argentina_province,20036,0.0434712802
+2023,54,Misiones,argentina_province,18932,0.0410759771
+2023,58,Neuquén,argentina_province,6891,0.0149511176
+2023,62,Río Negro,argentina_province,7375,0.0160012324
+2023,66,Salta,argentina_province,16974,0.0368277855
+2023,70,San Juan,argentina_province,9795,0.0212518062
+2023,74,San Luis,argentina_province,4963,0.0107680158
+2023,78,Santa Cruz,argentina_province,3139,0.0068105584
+2023,82,Santa Fe,argentina_province,37635,0.0816551024
+2023,86,Santiago del Estero,argentina_province,11871,0.0257560175
+2023,90,Tucumán,argentina_province,18537,0.0402189619
+2023,94,Tierra del Fuego,argentina_province,1440,0.0031243084
+2023,98,Otro país,other_country,214,0.0004643069
+2023,99,Lugar no especificado,unspecified,792,0.0017183696
+2024,02,Ciudad Aut. de Buenos Aires,argentina_province,21454,0.0519297566
+2024,06,Buenos Aires,argentina_province,147081,0.3560119574
+2024,10,Catamarca,argentina_province,3866,0.0093577160
+2024,14,Córdoba,argentina_province,33873,0.0819901485
+2024,18,Corrientes,argentina_province,12538,0.0303484333
+2024,22,Chaco,argentina_province,14350,0.0347344088
+2024,26,Chubut,argentina_province,5054,0.0122332894
+2024,30,Entre Ríos,argentina_province,12548,0.0303726385
+2024,34,Formosa,argentina_province,6711,0.0162440849
+2024,38,Jujuy,argentina_province,6352,0.0153751195
+2024,42,La Pampa,argentina_province,3039,0.0073559490
+2024,46,La Rioja,argentina_province,3503,0.0084790686
+2024,50,Mendoza,argentina_province,18505,0.0447916541
+2024,54,Misiones,argentina_province,16469,0.0398634829
+2024,58,Neuquén,argentina_province,6790,0.0164353057
+2024,62,Río Negro,argentina_province,6721,0.0162682900
+2024,66,Salta,argentina_province,14410,0.0348796398
+2024,70,San Juan,argentina_province,8701,0.0210609123
+2024,74,San Luis,argentina_province,4410,0.0106744769
+2024,78,Santa Cruz,argentina_province,2696,0.0065257119
+2024,82,Santa Fe,argentina_province,33713,0.0816028659
+2024,86,Santiago del Estero,argentina_province,11401,0.0275963063
+2024,90,Tucumán,argentina_province,16661,0.0403282220
+2024,94,Tierra del Fuego,argentina_province,1259,0.0030474300
+2024,98,Otro país,other_country,128,0.0003098261
+2024,99,Lugar no especificado,unspecified,902,0.0021833057
