@@ -154,3 +154,12 @@ formulario está activo y exige una cuenta de Google. Las verificaciones de edad
 residencia o nacionalidad, incompatibilidades, autoría y aceptación de la cesión
 se mantienen fuera de Git por contener decisiones o datos personales. El archivo
 final se generará únicamente después de las pruebas física y de lectura.
+
+## 2026-09-25 - Sustitución digital y candidato final
+
+El participante informó que no puede imprimir en A3, confirmó la legibilidad en
+pantalla y autorizó continuar asumiendo la prueba física. Para reducir el riesgo,
+se verificaron el lienzo A3 exacto, la página completa a 200 dpi y los sectores
+más densos a 300 dpi. El candidato final conserva la composición de v0.6 y elimina
+únicamente la advertencia de prototipo. Un validador independiente controla sus
+formatos, checksums, metadatos, anonimato e integridad vectorial.

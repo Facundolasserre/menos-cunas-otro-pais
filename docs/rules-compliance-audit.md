@@ -14,9 +14,8 @@ La página y las bases coinciden en la fecha de cierre: **15 de octubre de
 ## Resultado ejecutivo
 
 No se detectó ningún incumplimiento técnico o editorial que impida postular el
-proyecto en **Historia visual**. El archivo vigente todavía no debe enviarse
-porque conserva la marca de prototipo y faltan la prueba física y la lectura con
-tres personas.
+proyecto en **Historia visual**. El archivo definitivo fue generado sin marcas
+de prototipo después de la validación digital A3 y la aprobación del participante.
 
 La admisibilidad final también depende de confirmaciones personales y legales
 que sólo puede realizar el participante dentro del formulario. Esos datos no se
@@ -81,9 +80,9 @@ final fue aceptada sin intervención humana.
 | --- | --- | --- |
 | Precisión y rigor | 133.716 filas, 6.722.956 nacimientos y 41 controles oficiales conciliados | Ninguno conocido |
 | Impacto y aplicabilidad | Relevancia nacional para planificación sanitaria, educativa y de cuidados | Evitar recomendaciones causales o natalistas |
-| Entendimiento y síntesis | Mensaje principal, lectura escalonada y etiquetas directas | Pendiente prueba con lectores |
+| Entendimiento y síntesis | Mensaje principal, lectura escalonada y etiquetas directas | Sin prueba externa; legibilidad aprobada por el participante |
 | Originalidad y creatividad | Integra cantidad, composición etaria y alcance territorial en una historia única | La evaluación comparativa corresponde al jurado |
-| Impacto estético y grafismo | Sistema visual coherente, accesible y vectorial | Pendiente inspección A3 física |
+| Impacto estético y grafismo | Sistema visual coherente, accesible y vectorial | Sin impresión; inspección digital hasta 300 dpi |
 
 ## Campos que se completan fuera de Git
 
@@ -100,9 +99,10 @@ Antes de iniciar la carga se debe disponer de:
 4. la decisión de presentarse individualmente o desde una institución;
 5. tiempo para revisar la confirmación de envío antes del cierre.
 
-## Condición para generar el archivo final
+## Archivo final
 
-Sólo después de aprobar la copia A3 y las tres fichas de lectura se generará una
-versión nueva sin las leyendas “PROTOTIPO”, “PRUEBA DE IMPRESIÓN” y “NO
-PRESENTAR”. Ese archivo exacto deberá repetir todos los controles automáticos y
-una última inspección visual antes de cargarse.
+La imposibilidad de imprimir se registró de manera explícita. La pieza fue
+renderizada completa y por sectores a 200 y 300 dpi, se verificaron dimensiones,
+márgenes, tipografía, anonimato, metadatos y contenido vectorial, y el participante
+confirmó su legibilidad. El archivo exacto de entrega es
+`output/pdf/menos-cunas-otro-pais-umbral-sur.pdf`.

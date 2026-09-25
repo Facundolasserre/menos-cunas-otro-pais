@@ -99,3 +99,16 @@ El kit para la prueba con lectores se genera y valida con:
 
 Produce cuatro páginas A4: guía del facilitador y tres fichas anónimas. El
 validador controla formato, cantidad de páginas, texto, fuentes y anonimato.
+
+El archivo exacto de inscripción se genera y valida por separado para evitar
+confundirlo con una prueba:
+
+```bash
+.venv/bin/python scripts/design/build_submission_artifact.py
+.venv/bin/python scripts/validation/validate_submission_artifact.py
+```
+
+La primera orden produce el PDF final, un PNG alternativo, el SVG fuente y un
+manifiesto de checksums. La segunda exige A3 exacto, página única, fuentes
+incrustadas, texto extraíble, anonimato, ausencia de raster y ausencia de marcas
+de prototipo.

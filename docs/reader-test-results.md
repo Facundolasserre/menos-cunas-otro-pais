@@ -1,6 +1,8 @@
 # Resultados de la prueba de lectura v0.6
 
-Estado: pendiente de ejecución.
+Estado: no ejecutada. El participante informó que no puede realizar la impresión
+A3, confirmó la legibilidad en pantalla y aceptó sustituir esta instancia por la
+validación digital a escala documentada en `docs/final-release.md`.
 
 No registrar nombres, correos, fotografías identificables ni otros datos
 personales. Conservar las fichas en papel hasta transcribir únicamente los
@@ -12,14 +14,14 @@ resultados anónimos.
 | 2 | Pendiente | Pendiente | Pendiente | -/3 | -/3 | Pendiente | Pendiente |
 | 3 | Pendiente | Pendiente | Pendiente | -/3 | -/3 | Pendiente | Pendiente |
 
-## Decisión
+## Criterio conservado
 
-Pendiente. La v0.6 sólo puede aprobarse si:
+Si se realiza una prueba posterior, la v0.6 sólo puede aprobarse si:
 
 - las tres personas identifican la caída de nacimientos;
 - al menos dos responden correctamente las tres preguntas de 30 segundos;
 - no se repite una confusión crítica;
 - ningún texto es señalado como ilegible por dos personas.
 
-Después de completar la tabla, documentar aquí la decisión y cualquier cambio
-derivado antes de generar el archivo final sin marcas de prototipo.
+La ausencia de resultados externos no se presenta como una prueba superada; se
+registra como una limitación aceptada para continuar con la inscripción.

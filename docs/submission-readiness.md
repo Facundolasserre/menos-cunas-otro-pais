@@ -16,9 +16,9 @@ Fecha de control: 2026-09-25. Cierre indicado en las bases: 15 de octubre de
 | Anonimato de la obra | Listo | Sin nombre real; control automático |
 | Página y bases vigentes | Verificadas | Coinciden en cierre y requisitos |
 | Acceso al formulario | Acción del participante | Requiere iniciar sesión con Google |
-| Prueba física A3 | Pendiente | Imprimir v0.6 al 100% |
-| Lectura por terceros | Preparada | Kit A4 listo; ejecutar con tres personas |
-| Archivo definitivo | Bloqueado por pruebas | Retirar marcas de prototipo después de aprobar |
+| Prueba física A3 | Sustituida | A3 digital exacto inspeccionado; riesgo aceptado por el participante |
+| Lectura por terceros | No realizada | Participante confirmó legibilidad; protocolo conservado |
+| Archivo definitivo | Listo | PDF final sin marcas, validado y con seudónimo |
 | Elegibilidad personal | Confirmación del participante | Mayoría de edad, nacionalidad o residencia y ausencia de incompatibilidades |
 | Datos personales | Pendiente de formulario | Completar sólo en el sitio oficial, nunca en Git |
 | Aceptación legal | Pendiente de formulario | Autoría, propiedad intelectual, cesión y bases |
@@ -26,7 +26,7 @@ Fecha de control: 2026-09-25. Cierre indicado en las bases: 15 de octubre de
 
 ## Regla de salida
 
-No se cargará ningún archivo antes de resolver los dos controles de lectura. Tras
-aprobarlos se generará una versión final nueva, se eliminarán exclusivamente las
-marcas de prototipo y se repetirán todas las validaciones sobre el archivo exacto
-que se subirá.
+El único archivo visual que debe cargarse es
+`output/pdf/menos-cunas-otro-pais-umbral-sur.pdf`. Antes del envío se volverá a
+ejecutar `validate_submission_artifact.py` y se comprobará que su SHA-256 coincida
+con el manifiesto versionado.

@@ -27,5 +27,10 @@ La v0.6 es la prueba vigente: calcula la flecha principal desde el ancho real de
 los números y exige una separación mínima. Su PDF vectorial está en
 `output/pdf/prototype-v0.6-print-proof.pdf`.
 
+La pieza derivada para inscripción conserva exactamente la composición validada
+y elimina únicamente la advertencia de prototipo. El PDF definitivo está en
+`output/pdf/menos-cunas-otro-pais-umbral-sur.pdf`; el SVG fuente y su manifiesto
+permanecen en `design/exports/`.
+
 La pieza final no se considerará validada hasta revisar su render a tamaño real
 con `docs/visual-checklist.md`.

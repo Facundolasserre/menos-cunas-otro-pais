@@ -1,0 +1,39 @@
+{
+  "artifact": "submission-v1",
+  "status": "ready_for_submission",
+  "source_prototype": "v0.6",
+  "category": "Historia visual",
+  "title": "Menos cunas, otro país",
+  "pseudonym": "UMBRAL SUR",
+  "canvas": {
+    "format": "A3 portrait",
+    "width_mm": 297,
+    "height_mm": 420,
+    "png_width_px": 2806,
+    "png_height_px": 3968
+  },
+  "files": {
+    "menos-cunas-otro-pais-umbral-sur.svg": {
+      "path": "design/exports/menos-cunas-otro-pais-umbral-sur.svg",
+      "bytes": 53235,
+      "sha256": "0108821340b8a059161c3987934527cba6590f42ce18b53fc77d968a4e20c453"
+    },
+    "menos-cunas-otro-pais-umbral-sur.png": {
+      "path": "output/png/menos-cunas-otro-pais-umbral-sur.png",
+      "bytes": 648094,
+      "sha256": "86448d61a5dff998d871d2e70a334e1e0d8ee319ff4a8679f2fd53dbcca581cb"
+    },
+    "menos-cunas-otro-pais-umbral-sur.pdf": {
+      "path": "output/pdf/menos-cunas-otro-pais-umbral-sur.pdf",
+      "bytes": 46712,
+      "sha256": "8e61e6cfab1e207da001c00b6d380507bb0f5afb84eddd3a4fa55e76e143df73"
+    }
+  },
+  "palette": {
+    "background": "#F7F4EC",
+    "ink": "#1C252B",
+    "accent_2024": "#0F6370",
+    "neutral_2014": "#6B665E",
+    "grid": "#D8D2C7"
+  }
+}

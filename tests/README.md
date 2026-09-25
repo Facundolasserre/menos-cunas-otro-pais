@@ -36,6 +36,9 @@ Los controles de datos ya implementados son:
   palabras, fuentes, declaración de IA, seudónimo y ausencia del nombre real;
 - `scripts/validation/validate_reader_test_kit.py`, que verifica las cuatro
   páginas A4, sus fuentes, contenido obligatorio y anonimato;
+- `scripts/validation/validate_submission_artifact.py`, que verifica el PDF,
+  PNG, SVG y manifiesto exactos de la entrega, incluidos anonimato, dimensiones,
+  integridad vectorial y ausencia de marcas de prototipo;
 - el constructor del prototipo, que rechaza solapamientos entre la línea temporal
   y los rectángulos ampliados de sus anotaciones, y exige separación entre la
   flecha principal y ambos números destacados;

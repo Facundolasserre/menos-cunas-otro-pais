@@ -18,13 +18,15 @@ composición etaria en las 24 jurisdicciones. La entrega se plantea como una
 Historia visual estática de una página, diferenciada de las proyecciones
 educativas oficiales ya publicadas. El storyboard **El corrimiento** fue
 seleccionado después de comparar tres alternativas. El prototipo visual
-evolucionó a v0.6 en SVG, PNG y PDF A3: está inspeccionado, supera controles
-cromáticos, tipográficos y de integridad vectorial, y continúa marcado como no
-presentable hasta completar la prueba impresa y la lectura con terceros.
+evolucionó a v0.6 en SVG, PNG y PDF A3 y dio origen al candidato definitivo
+`output/pdf/menos-cunas-otro-pais-umbral-sur.pdf`. El archivo supera controles
+cromáticos, tipográficos, geométricos, de anonimato e integridad vectorial.
 El título y el seudónimo fueron seleccionados mediante matrices competitivas; el
 paquete textual del formulario está validado y no se atribuyen causas sin
 evidencia compatible. La prueba externa dispone de un kit A4 reproducible con
 guía del facilitador, tres fichas anónimas y criterios de aprobación explícitos.
+Ante la imposibilidad de imprimir A3, el participante aceptó sustituir la prueba
+física por una inspección digital a escala y confirmó la legibilidad de la pieza.
 
 ## Principios de trabajo
 

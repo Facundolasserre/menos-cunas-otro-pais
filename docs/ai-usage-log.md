@@ -42,6 +42,8 @@ por las bases del concurso.
 - Asistencia en la auditoría de admisibilidad contra las bases y la página
   oficial vigentes, sin completar campos personales ni aceptar declaraciones
   legales en nombre del participante.
+- Asistencia en la exportación reproducible y auditoría técnica del candidato
+  final, después de la aprobación explícita de legibilidad por el participante.
 
 ## Límites adoptados
 

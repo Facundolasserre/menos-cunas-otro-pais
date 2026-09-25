@@ -1,6 +1,6 @@
 # Paquete de inscripción
 
-Estado: texto aprobado para formulario; archivo visual aún en prueba de impresión.
+Estado: texto y archivo visual aprobados para la carga final.
 
 Fecha límite indicada en las bases: **15 de octubre de 2026**.
 
@@ -64,8 +64,11 @@ Si el formulario incorpora un campo separado, utilizar:
 
 ## Archivo
 
-La prueba vigente es `output/pdf/prototype-v0.6-print-proof.pdf`. No debe cargarse
-al formulario mientras conserve la marca “PRUEBA DE IMPRESIÓN · NO PRESENTAR”.
+Archivo exacto para cargar:
+`output/pdf/menos-cunas-otro-pais-umbral-sur.pdf`.
+
+No cargar el prototipo, el PNG alternativo, el manifiesto, el kit de lectura ni
+ningún archivo de código.
 
 ## Datos personales pendientes
 

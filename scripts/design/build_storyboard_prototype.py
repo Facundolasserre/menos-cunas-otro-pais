@@ -100,21 +100,24 @@ def draw_year_key(fig: plt.Figure, y: float) -> None:
 def draw_header(
     fig: plt.Figure,
     national: pd.DataFrame,
+    *,
+    show_prototype_warning: bool = True,
 ) -> tuple[FancyArrowPatch, tuple[Text, Text]]:
     first = int(national.loc[2014, "registered_births"])
     last = int(national.loc[2024, "registered_births"])
     change = last - first
     change_pct = change / first * 100
 
-    fig.text(
-        LEFT,
-        0.976,
-        "PROTOTIPO 0.6 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
-        color=NEUTRAL,
-        fontsize=8,
-        fontweight="bold",
-        family=FONT,
-    )
+    if show_prototype_warning:
+        fig.text(
+            LEFT,
+            0.976,
+            "PROTOTIPO 0.6 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
+            color=NEUTRAL,
+            fontsize=8,
+            fontweight="bold",
+            family=FONT,
+        )
     fig.text(
         LEFT,
         0.942,
