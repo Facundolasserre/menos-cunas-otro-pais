@@ -23,7 +23,8 @@ cromáticos, tipográficos y de integridad vectorial, y continúa marcado como n
 presentable hasta completar la prueba impresa y la lectura con terceros.
 El título y el seudónimo fueron seleccionados mediante matrices competitivas; el
 paquete textual del formulario está validado y no se atribuyen causas sin
-evidencia compatible.
+evidencia compatible. La prueba externa dispone de un kit A4 reproducible con
+guía del facilitador, tres fichas anónimas y criterios de aprobación explícitos.
 
 ## Principios de trabajo
 

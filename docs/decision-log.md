@@ -137,3 +137,11 @@ demasiado próximos a 777.012 y 413.135. Se descartó una corrección basada en
 coordenadas fijas: el constructor ahora mide el ancho renderizado de ambos
 números, reserva 12 puntos ópticos por lado y falla si la separación efectiva
 baja de ocho puntos. La v0.6 reemplaza a v0.5 como prueba de impresión.
+
+## 2026-09-25 - Kit de validación externa
+
+Se convirtió el protocolo de lectura en un PDF A4 de cuatro páginas: guía del
+facilitador y tres fichas anónimas. El guion separa exposiciones de 5 segundos,
+30 segundos y 2 minutos, incluye respuestas esperadas sólo para quien facilita
+y aplica una regla de aprobación previa. Un validador controla tamaño, páginas,
+fuentes incrustadas, texto extraíble, seudónimo y ausencia de identidad personal.

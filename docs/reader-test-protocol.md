@@ -2,6 +2,9 @@
 
 Versión objetivo: prototipo v0.6 impreso en A3 al 100%.
 
+Kit imprimible: `output/pdf/reader-test-kit-v0.6.pdf`. La transcripción anónima
+se registra en `docs/reader-test-results.md`.
+
 ## Objetivo
 
 Detectar problemas de legibilidad, jerarquía o interpretación antes de cerrar la

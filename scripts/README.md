@@ -89,3 +89,13 @@ de una anotación directa o si la flecha principal queda a menos de ocho puntos
 de cualquiera de los dos números destacados.
 El control de inscripción verifica el límite de 200 palabras, los campos
 obligatorios, las fuentes abiertas, la declaración de IA y el anonimato.
+
+El kit para la prueba con lectores se genera y valida con:
+
+```bash
+.venv/bin/python scripts/design/build_reader_test_kit.py
+.venv/bin/python scripts/validation/validate_reader_test_kit.py
+```
+
+Produce cuatro páginas A4: guía del facilitador y tres fichas anónimas. El
+validador controla formato, cantidad de páginas, texto, fuentes y anonimato.

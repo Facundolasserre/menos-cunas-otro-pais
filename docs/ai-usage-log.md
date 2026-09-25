@@ -37,6 +37,8 @@ por las bases del concurso.
   automática de extensión, fuentes, transparencia de IA y anonimato.
 - Asistencia en la corrección v0.6 de la flecha principal y en la incorporación
   de un control geométrico basado en los anchos tipográficos renderizados.
+- Asistencia en la diagramación del kit anónimo para la prueba externa y en la
+  automatización de sus controles de formato e integridad.
 
 ## Límites adoptados
 

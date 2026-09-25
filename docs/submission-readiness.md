@@ -15,7 +15,7 @@ Fecha de control: 2026-09-25. Cierre indicado en las bases: 15 de octubre de
 | Integridad del archivo | Listo | A3 exacto, vectorial, fuentes incrustadas |
 | Anonimato de la obra | Listo | Sin nombre real; control automático |
 | Prueba física A3 | Pendiente | Imprimir v0.6 al 100% |
-| Lectura por terceros | Pendiente | Aplicar protocolo con tres personas |
+| Lectura por terceros | Preparada | Kit A4 listo; ejecutar con tres personas |
 | Archivo definitivo | Bloqueado por pruebas | Retirar marcas de prototipo después de aprobar |
 | Elegibilidad personal | Confirmación del participante | Mayoría de edad, nacionalidad o residencia y ausencia de incompatibilidades |
 | Datos personales | Pendiente de formulario | Completar sólo en el sitio oficial, nunca en Git |

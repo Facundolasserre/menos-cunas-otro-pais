@@ -33,6 +33,8 @@ Los controles de datos ya implementados son:
   página única, texto extraíble, fuentes incrustadas y contenido vectorial;
 - `scripts/validation/validate_submission_package.py`, que verifica el límite de
   palabras, fuentes, declaración de IA, seudónimo y ausencia del nombre real;
+- `scripts/validation/validate_reader_test_kit.py`, que verifica las cuatro
+  páginas A4, sus fuentes, contenido obligatorio y anonimato;
 - el constructor del prototipo, que rechaza solapamientos entre la línea temporal
   y los rectángulos ampliados de sus anotaciones, y exige separación entre la
   flecha principal y ambos números destacados;
