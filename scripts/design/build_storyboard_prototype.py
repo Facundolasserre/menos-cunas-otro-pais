@@ -22,12 +22,13 @@ import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
 from matplotlib.lines import Line2D  # noqa: E402
 from matplotlib.patches import FancyArrowPatch  # noqa: E402
+from matplotlib.text import Text  # noqa: E402
 
 
 PROCESSED = ROOT / "data" / "processed"
 EXPORTS = ROOT / "design" / "exports"
 PDF_EXPORTS = ROOT / "output" / "pdf"
-VERSION = "v0.3"
+VERSION = "v0.4"
 SVG_OUTPUT = EXPORTS / f"prototype-{VERSION}.svg"
 PNG_OUTPUT = EXPORTS / f"prototype-{VERSION}.png"
 PDF_OUTPUT = PDF_EXPORTS / f"prototype-{VERSION}-print-proof.pdf"
@@ -104,7 +105,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     fig.text(
         LEFT,
         0.976,
-        "PROTOTIPO 0.3 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
+        "PROTOTIPO 0.4 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
         color=NEUTRAL,
         fontsize=8,
         fontweight="bold",
@@ -205,7 +206,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     )
 
 
-def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> None:
+def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> tuple[Line2D, list[object]]:
     fig.text(
         LEFT,
         0.772,
@@ -233,21 +234,22 @@ def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> None:
     axis.set_ylim(375, 825)
     for value in (400, 600, 800):
         axis.axhline(value, color=GRID, linewidth=0.65, zorder=0)
-    axis.plot(years, births, color=ACCENT, linewidth=2.4, zorder=2)
+    (timeline_line,) = axis.plot(years, births, color=ACCENT, linewidth=2.4, zorder=2)
     axis.scatter(years, births, s=18, color=ACCENT, zorder=3)
     axis.set_xticks([2014, 2016, 2018, 2020, 2022, 2024])
     axis.set_xticklabels(["2014", "2016", "2018", "2020", "2022", "2024"])
     axis.set_yticks([400, 600, 800])
     axis.set_yticklabels(["400 mil", "600 mil", "800 mil"])
 
-    annotations = {
-        2014: ("777.012", (4, 10), "left"),
-        2019: ("625.441\n−19,5% desde 2014", (-6, 9), "right"),
-        2020: ("533.299\n−14,7% en un año", (8, -27), "left"),
-        2024: ("413.135\n−46,8% desde 2014", (-5, 10), "right"),
+    annotation_specs = {
+        2014: ("777.012", (4, 12), "left", False),
+        2019: ("625.441\n−19,5% desde 2014", (-8, 24), "right", True),
+        2020: ("533.299\n−14,7% en un año", (8, -20), "left", True),
+        2024: ("413.135\n−46,8% desde 2014", (-8, 24), "right", True),
     }
-    for year, (label, offset, alignment) in annotations.items():
-        axis.annotate(
+    annotations = []
+    for year, (label, offset, alignment, add_leader) in annotation_specs.items():
+        annotation = axis.annotate(
             label,
             xy=(year, float(national.loc[year, "registered_births"]) / 1_000),
             xytext=offset,
@@ -259,7 +261,41 @@ def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> None:
             fontweight="bold" if year in {2014, 2024} else "normal",
             family=FONT,
             linespacing=1.25,
+            arrowprops=(
+                {
+                    "arrowstyle": "-",
+                    "color": NEUTRAL,
+                    "linewidth": 0.7,
+                    "shrinkA": 3,
+                    "shrinkB": 4,
+                }
+                if add_leader
+                else None
+            ),
         )
+        annotations.append(annotation)
+
+    return timeline_line, annotations
+
+
+def validate_timeline_clearance(
+    fig: plt.Figure,
+    timeline_line: Line2D,
+    annotations: list[object],
+) -> None:
+    """Fail when the data line enters any annotation's padded text box."""
+    renderer = fig.canvas.get_renderer()
+    coordinates = np.column_stack((timeline_line.get_xdata(), timeline_line.get_ydata()))
+    display_points = timeline_line.get_transform().transform(coordinates)
+
+    for annotation in annotations:
+        box = Text.get_window_extent(annotation, renderer=renderer).padded(2.5)
+        for start, end in zip(display_points[:-1], display_points[1:], strict=True):
+            samples = np.linspace(start, end, 101)
+            if any(box.contains(float(x), float(y)) for x, y in samples):
+                raise RuntimeError(
+                    f"Timeline line overlaps annotation: {annotation.get_text()!r}"
+                )
 
 
 def draw_age_shift(fig: plt.Figure, age: pd.DataFrame) -> None:
@@ -596,13 +632,15 @@ def main() -> None:
     )
     draw_header(figure, national)
     figure_rule(figure, 0.795)
-    draw_timeline(figure, national)
+    timeline_line, timeline_annotations = draw_timeline(figure, national)
     figure_rule(figure, 0.628)
     draw_age_shift(figure, age)
     figure_rule(figure, 0.464)
     draw_province_shift(figure, province)
     figure_rule(figure, 0.124)
     draw_context_and_footer(figure)
+    figure.canvas.draw()
+    validate_timeline_clearance(figure, timeline_line, timeline_annotations)
 
     metadata = {
         "Title": f"Menos cunas, otro país — prototipo {VERSION}",

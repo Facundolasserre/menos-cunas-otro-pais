@@ -82,3 +82,6 @@ imágenes incrustadas. La auditoría de accesibilidad simula tres deficiencias d
 visión cromática y comprueba que la lectura en gris no dependa sólo del color.
 El control de impresión verifica la página A3 exacta, texto extraíble, fuentes
 incrustadas y ausencia de imágenes rasterizadas dentro del PDF.
+
+El constructor también falla si la línea de la serie temporal invade el área
+de una anotación directa, incluido un margen de seguridad alrededor del texto.

@@ -13,7 +13,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORTS = ROOT / "design" / "exports"
-VERSIONS = {"v0.1": None, "v0.2": 7.5, "v0.3": 8.0}
+VERSIONS = {"v0.1": None, "v0.2": 7.5, "v0.3": 8.0, "v0.4": 8.0}
 
 
 def require(condition: bool, message: str) -> None:

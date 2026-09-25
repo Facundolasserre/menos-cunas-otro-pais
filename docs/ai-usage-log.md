@@ -30,6 +30,8 @@ por las bases del concurso.
 - Asistencia en la construcción y auditoría de la prueba de impresión v0.3:
   exportación PDF vectorial A3, verificación de fuentes, dimensiones y texto,
   detección de una colisión en el pie y diseño del protocolo de lectura externa.
+- Asistencia en la corrección v0.4 de anotaciones superpuestas con la serie
+  temporal y en la automatización de un control geométrico que impide regresiones.
 
 ## Límites adoptados
 

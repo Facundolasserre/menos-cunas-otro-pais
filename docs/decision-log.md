@@ -110,3 +110,12 @@ incrustadas y texto extraíble. La inspección del primer render detectó un roc
 el pie metodológico; se corrigió con saltos controlados y mayor separación. La
 pieza sólo avanzará después de imprimir al 100% y superar una prueba estructurada
 con tres lectores externos.
+
+## 2026-09-25 - Separación entre anotaciones y serie v0.4
+
+Se aceptó la observación de que la línea temporal interfería con etiquetas de
+2019 y 2024. Se descartó resolverlo con texto más pequeño o cajas que ocultaran
+la serie. Las etiquetas se desplazaron a zonas libres y se conectaron mediante
+líderes finos y neutrales; 2020 quedó debajo de su punto. El constructor ahora
+falla automáticamente si la serie entra en el rectángulo ampliado de cualquier
+anotación. La v0.4 reemplaza a v0.3 como prueba de impresión.

@@ -18,7 +18,7 @@ composición etaria en las 24 jurisdicciones. La entrega se plantea como una
 Historia visual estática de una página, diferenciada de las proyecciones
 educativas oficiales ya publicadas. El storyboard **El corrimiento** fue
 seleccionado después de comparar tres alternativas. El prototipo visual
-evolucionó a v0.3 en SVG, PNG y PDF A3: está inspeccionado, supera controles
+evolucionó a v0.4 en SVG, PNG y PDF A3: está inspeccionado, supera controles
 cromáticos, tipográficos y de integridad vectorial, y continúa marcado como no
 presentable hasta completar la prueba impresa y la lectura con terceros.
 El título fue seleccionado mediante una matriz competitiva y no se atribuyen

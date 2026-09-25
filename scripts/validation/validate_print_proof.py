@@ -10,8 +10,9 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[2]
-PDF = ROOT / "output" / "pdf" / "prototype-v0.3-print-proof.pdf"
-MANIFEST = ROOT / "design" / "exports" / "prototype-v0.3-manifest.json"
+VERSION = "v0.4"
+PDF = ROOT / "output" / "pdf" / f"prototype-{VERSION}-print-proof.pdf"
+MANIFEST = ROOT / "design" / "exports" / f"prototype-{VERSION}-manifest.json"
 
 
 def require(condition: bool, message: str) -> None:
@@ -53,9 +54,9 @@ def embedded_font_status(page: object) -> tuple[int, int]:
 
 
 def main() -> None:
-    require(PDF.exists() and MANIFEST.exists(), "The v0.3 print proof must be built first")
+    require(PDF.exists() and MANIFEST.exists(), f"The {VERSION} print proof must be built first")
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
-    require(manifest["prototype"] == "v0.3", "Unexpected print-proof manifest version")
+    require(manifest["prototype"] == VERSION, "Unexpected print-proof manifest version")
 
     reader = PdfReader(PDF)
     require(not reader.is_encrypted, "Print proof must not be encrypted")
@@ -70,7 +71,7 @@ def main() -> None:
 
     text = page.extract_text() or ""
     required_text = [
-        "PROTOTIPO 0.3",
+        "PROTOTIPO 0.4",
         "PRUEBA DE IMPRESIÓN",
         "NO PRESENTAR",
         "Menos cunas, otro país",
@@ -91,7 +92,7 @@ def main() -> None:
     require(embedded_fonts == fonts, f"Only {embedded_fonts} of {fonts} PDF fonts are embedded")
 
     metadata = reader.metadata or {}
-    require("v0.3" in str(metadata.get("/Title", "")), "PDF title metadata is incomplete")
+    require(VERSION in str(metadata.get("/Title", "")), "PDF title metadata is incomplete")
 
     print(f"OK: one-page A3 PDF measures {width_mm:.2f} × {height_mm:.2f} mm.")
     print(f"OK: {fonts}/{fonts} fonts embedded; text extractable; no raster images.")
