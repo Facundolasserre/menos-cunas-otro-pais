@@ -15,6 +15,10 @@ por las bases del concurso.
 - Asistencia en la programación y revisión de la descarga, normalización,
   armonización y validación de datos; todos los controles quedan reproducibles
   y sus resultados son revisados antes de cada commit.
+- Ideación y comparación de tres arquitecturas narrativas, definición de una
+  matriz de evaluación y generación de un wireframe estructural no final. La
+  selección, el refinamiento gráfico y la aprobación de la obra permanecen bajo
+  intervención humana.
 
 ## Límites adoptados
 

@@ -47,9 +47,10 @@ ocurrencia de cada nacimiento.
 6. **Fuentes y método:** definiciones, universo, exclusiones y enlace o QR a una
    nota metodológica ampliada.
 
-La forma visual definitiva se elegirá después de evaluar los datos y bocetar
-alternativas manualmente. La IA puede asistir con análisis y código, pero no
-generará la visualización final ni las imágenes de la obra.
+Después de evaluar tres alternativas se seleccionó la arquitectura **El
+corrimiento**, documentada en `design/storyboard.md`. La IA puede asistir con
+análisis, código e ideación estructural, pero no generará la visualización final
+ni las imágenes de la obra.
 
 ## Decisión de originalidad
 

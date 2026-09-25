@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="1188" viewBox="0 0 840 1188" role="img" aria-labelledby="title desc">
+  <title id="title">Wireframe del storyboard El corrimiento</title>
+  <desc id="desc">Boceto vertical con apertura, serie temporal, distribución por edad, comparación de 24 jurisdicciones y cierre metodológico.</desc>
+  <rect width="840" height="1188" fill="#f4f1ea"/>
+  <g font-family="Arial, sans-serif" fill="#222222">
+    <text x="64" y="62" font-size="13" letter-spacing="1.5" fill="#6f6a62">WIREFRAME · NO ES DISEÑO FINAL</text>
+    <text x="64" y="104" font-size="34" font-weight="700">Menos cunas, otro país</text>
+    <text x="64" y="134" font-size="16">Cayeron 46,8% y la composición se desplazó en las 24 jurisdicciones</text>
+
+    <text x="64" y="196" font-size="32" font-weight="700">777.012</text>
+    <text x="64" y="219" font-size="13" fill="#6f6a62">2014</text>
+    <line x1="205" y1="190" x2="580" y2="190" stroke="#a9a39a" stroke-width="3"/>
+    <path d="M568 181 L582 190 L568 199" fill="none" stroke="#a9a39a" stroke-width="3"/>
+    <text x="610" y="196" font-size="32" font-weight="700" fill="#b64d32">413.135</text>
+    <text x="610" y="219" font-size="13" fill="#6f6a62">2024</text>
+    <text x="351" y="176" font-size="16" font-weight="700">−363.877</text>
+
+    <line x1="64" y1="254" x2="776" y2="254" stroke="#d2ccc2"/>
+    <text x="64" y="286" font-size="20" font-weight="700">No empezó con la pandemia</text>
+    <rect x="64" y="306" width="712" height="138" fill="none" stroke="#c4bdb2"/>
+    <polyline points="80,324 147,329 214,345 281,356 348,366 415,388 482,414 549,415 616,421 683,428 760,436" fill="none" stroke="#b64d32" stroke-width="4"/>
+    <line x1="80" y1="444" x2="760" y2="444" stroke="#d2ccc2"/>
+    <text x="80" y="468" font-size="12" fill="#6f6a62">2014</text>
+    <text x="738" y="468" font-size="12" fill="#6f6a62">2024</text>
+    <text x="380" y="342" font-size="13">La pandemia aceleró una tendencia previa</text>
+
+    <line x1="64" y1="496" x2="776" y2="496" stroke="#d2ccc2"/>
+    <text x="64" y="528" font-size="20" font-weight="700">El centro se movió: 20–24 → 25–29</text>
+    <g font-size="11" fill="#6f6a62">
+      <text x="64" y="560">&lt;15</text><text x="64" y="584">15–19</text><text x="64" y="608">20–24</text><text x="64" y="632">25–29</text>
+      <text x="420" y="560">30–34</text><text x="420" y="584">35–39</text><text x="420" y="608">40–44</text><text x="420" y="632">45+</text>
+    </g>
+    <g stroke="#aaa39a" stroke-width="2" fill="none">
+      <line x1="127" y1="556" x2="128" y2="556"/><circle cx="128" cy="556" r="4" fill="#f4f1ea"/><circle cx="127" cy="556" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="196" y1="580" x2="251" y2="580"/><circle cx="251" cy="580" r="4" fill="#f4f1ea"/><circle cx="196" cy="580" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="314" y1="604" x2="338" y2="604"/><circle cx="338" cy="604" r="4" fill="#f4f1ea"/><circle cx="314" cy="604" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="322" y1="628" x2="344" y2="628"/><circle cx="322" cy="628" r="4" fill="#f4f1ea"/><circle cx="344" cy="628" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="671" y1="556" x2="691" y2="556"/><circle cx="671" cy="556" r="4" fill="#f4f1ea"/><circle cx="691" cy="556" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="599" y1="580" x2="624" y2="580"/><circle cx="599" cy="580" r="4" fill="#f4f1ea"/><circle cx="624" cy="580" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="520" y1="604" x2="532" y2="604"/><circle cx="520" cy="604" r="4" fill="#f4f1ea"/><circle cx="532" cy="604" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="495" y1="628" x2="497" y2="628"/><circle cx="495" cy="628" r="4" fill="#f4f1ea"/><circle cx="497" cy="628" r="5" fill="#b64d32" stroke="#b64d32"/>
+    </g>
+
+    <line x1="64" y1="662" x2="776" y2="662" stroke="#d2ccc2"/>
+    <text x="64" y="696" font-size="20" font-weight="700">En las 24 jurisdicciones aumentó el peso de madres de 30+</text>
+    <text x="64" y="720" font-size="12" fill="#6f6a62">2014 ○     2024 ●     porcentaje sobre edad conocida</text>
+    <g font-size="10" fill="#6f6a62">
+      <text x="64" y="750">Formosa</text><text x="64" y="768">Misiones</text><text x="64" y="786">San Juan</text><text x="64" y="804">Santiago del Estero</text>
+      <text x="64" y="822">Chaco</text><text x="64" y="840">Corrientes</text><text x="64" y="858">Salta</text><text x="64" y="876">Catamarca</text>
+      <text x="64" y="894">San Luis</text><text x="64" y="912">Tucumán</text><text x="64" y="930">La Rioja</text><text x="64" y="948">Santa Cruz</text>
+      <text x="420" y="750">Entre Ríos</text><text x="420" y="768">La Pampa</text><text x="420" y="786">Mendoza</text><text x="420" y="804">Buenos Aires</text>
+      <text x="420" y="822">Córdoba</text><text x="420" y="840">Chubut</text><text x="420" y="858">Jujuy</text><text x="420" y="876">Río Negro</text>
+      <text x="420" y="894">Santa Fe</text><text x="420" y="912">Neuquén</text><text x="420" y="930">Tierra del Fuego</text><text x="420" y="948">CABA</text>
+    </g>
+    <g stroke="#a9a39a" stroke-width="2" fill="#f4f1ea">
+      <line x1="170" y1="746" x2="250" y2="746"/><circle cx="170" cy="746" r="4"/><circle cx="250" cy="746" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="170" y1="764" x2="270" y2="764"/><circle cx="170" cy="764" r="4"/><circle cx="270" cy="764" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="170" y1="782" x2="274" y2="782"/><circle cx="170" cy="782" r="4"/><circle cx="274" cy="782" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="170" y1="800" x2="290" y2="800"/><circle cx="170" cy="800" r="4"/><circle cx="290" cy="800" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="526" y1="746" x2="620" y2="746"/><circle cx="526" cy="746" r="4"/><circle cx="620" cy="746" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="526" y1="764" x2="640" y2="764"/><circle cx="526" cy="764" r="4"/><circle cx="640" cy="764" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="526" y1="782" x2="670" y2="782"/><circle cx="526" cy="782" r="4"/><circle cx="670" cy="782" r="5" fill="#b64d32" stroke="#b64d32"/>
+      <line x1="526" y1="800" x2="735" y2="800"/><circle cx="526" cy="800" r="4"/><circle cx="735" cy="800" r="5" fill="#b64d32" stroke="#b64d32"/>
+    </g>
+    <text x="64" y="986" font-size="11" fill="#6f6a62">Las 16 filas restantes siguen la misma grilla; el gráfico final tendrá una sola columna de 24.</text>
+
+    <line x1="64" y1="1016" x2="776" y2="1016" stroke="#d2ccc2"/>
+    <text x="64" y="1050" font-size="20" font-weight="700">Cohortes menores ya cambian la planificación</text>
+    <text x="64" y="1076" font-size="14">−27% estudiantes de primaria proyectados entre 2025 y 2030</text>
+    <text x="64" y="1100" font-size="11" fill="#6f6a62">Proyección externa DNP/RENAPER · no empalmada con la serie DEIS</text>
+    <line x1="64" y1="1124" x2="776" y2="1124" stroke="#d2ccc2"/>
+    <text x="64" y="1148" font-size="10" fill="#6f6a62">Fuente, universo, edad desconocida, año de registro, seudónimo y declaración de IA</text>
+  </g>
+</svg>

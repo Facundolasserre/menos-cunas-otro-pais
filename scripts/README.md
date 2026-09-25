@@ -55,3 +55,13 @@ El análisis territorial de la composición etaria y su validación se ejecutan 
 Generan tres tablas procesadas y `docs/age-territory-findings.md`. La validación
 reconstruye los conteos desde el Parquet, comprueba 384 combinaciones de los años
 extremos —incluidas dos celdas con cero— y verifica las 24 trayectorias.
+
+Las cifras elegidas para el storyboard se controlan antes de cada prototipo con:
+
+```bash
+.venv/bin/python scripts/validation/validate_storyboard_claims.py
+```
+
+El control recalcula magnitudes, períodos, composición nacional, extremos
+provinciales y excepciones modales, y comprueba que los valores redondeados
+aparezcan en `design/storyboard.md`.

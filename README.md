@@ -16,8 +16,9 @@ controles del Anuario DEIS 2024. El primer análisis descriptivo de magnitud,
 territorio y edad está validado. El análisis ampliado confirma un cambio de
 composición etaria en las 24 jurisdicciones. La entrega se plantea como una
 Historia visual estática de una página, diferenciada de las proyecciones
-educativas oficiales ya publicadas. El título es provisorio y no se atribuyen
-causas sin evidencia compatible.
+educativas oficiales ya publicadas. El storyboard **El corrimiento** fue
+seleccionado después de comparar tres alternativas. El título es provisorio y no
+se atribuyen causas sin evidencia compatible.
 
 ## Principios de trabajo
 

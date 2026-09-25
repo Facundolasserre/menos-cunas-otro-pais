@@ -17,8 +17,9 @@ sobre la estructura demográfica del país?
 
 ## Hipótesis que deben verificarse
 
-1. La reducción de nacimientos entre 2014 y 2024 es sustantiva tanto en
-   cantidades como al controlar por población.
+1. La reducción de nacimientos registrados entre 2014 y 2024 es sustantiva en
+   cantidades. No se construirá una tasa para todo el período empalmando
+   proyecciones poblacionales incompatibles.
 2. La transformación no ocurrió al mismo ritmo en todas las jurisdicciones.
 3. Una parte importante del cambio corresponde a la reducción de nacimientos
    de madres adolescentes.
@@ -52,4 +53,3 @@ La obra debe aspirar al máximo nivel de la rúbrica del concurso:
 - entendimiento y síntesis;
 - originalidad y creatividad;
 - impacto estético y grafismo.
-

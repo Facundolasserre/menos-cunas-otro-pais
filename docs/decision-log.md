@@ -70,3 +70,13 @@ anteriores se basan en Censo 2010 y fueron reemplazadas. No se construirá una
 tasa 2014–2024 empalmando revisiones incompatibles. Las comparaciones principales
 seguirán siendo conteos registrados y composiciones dentro de edades conocidas,
 con esa limitación visible.
+
+## 2026-09-25 - Storyboard
+
+Se compararon tres arquitecturas: un corrimiento basado en posiciones alineadas,
+una matriz de 24 perfiles completos y un flujo apilado que se angosta. Se eligió
+**El corrimiento** porque combina impacto inicial, comparación precisa y
+evidencia visible para las 24 jurisdicciones. El gráfico principal será un
+dumbbell de la proporción de nacimientos de madres de 30 años o más, no un mapa.
+La elección obtuvo 96/100 en una matriz ponderada por rigor, impacto,
+originalidad, síntesis, evidencia territorial y riesgo de producción.

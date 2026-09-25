@@ -21,6 +21,9 @@ Los controles de datos ya implementados son:
 - `scripts/validation/validate_age_territory_indicators.py`, que reconcilia las
   distribuciones etarias provinciales, sus ceros explícitos, participaciones,
   grupos modales y cambios 2014–2024;
+- `scripts/validation/validate_storyboard_claims.py`, que recalcula desde los
+  indicadores cada cifra seleccionada para la narrativa y comprueba su presencia
+  en el storyboard;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 
