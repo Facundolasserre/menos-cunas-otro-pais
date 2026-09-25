@@ -85,13 +85,20 @@ def main() -> None:
     for label in required_text:
         require(label in text, f"Text is not extractable from PDF: {label}")
 
+    metadata = reader.metadata or {}
+    anonymous_content = text + "\n" + "\n".join(str(value) for value in metadata.values())
+    for identifying_text in ("Facundo", "Lasserre"):
+        require(
+            identifying_text.casefold() not in anonymous_content.casefold(),
+            "Personal identity leaked into PDF text or metadata",
+        )
+
     raster_images = count_raster_images(page)
     require(raster_images == 0, f"PDF contains {raster_images} raster image(s)")
     fonts, embedded_fonts = embedded_font_status(page)
     require(fonts > 0, "PDF does not declare fonts")
     require(embedded_fonts == fonts, f"Only {embedded_fonts} of {fonts} PDF fonts are embedded")
 
-    metadata = reader.metadata or {}
     require(VERSION in str(metadata.get("/Title", "")), "PDF title metadata is incomplete")
 
     print(f"OK: one-page A3 PDF measures {width_mm:.2f} × {height_mm:.2f} mm.")

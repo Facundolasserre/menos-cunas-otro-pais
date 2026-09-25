@@ -30,7 +30,8 @@ Los controles de datos ya implementados son:
 - `scripts/validation/validate_visual_accessibility.py`, que simula protanopia,
   deuteranopia y tritanopia, y verifica la codificación redundante en gris;
 - `scripts/validation/validate_print_proof.py`, que verifica tamaño físico A3,
-  página única, texto extraíble, fuentes incrustadas y contenido vectorial;
+  página única, texto extraíble, fuentes incrustadas, contenido vectorial y
+  ausencia de identidad personal en texto y metadatos;
 - `scripts/validation/validate_submission_package.py`, que verifica el límite de
   palabras, fuentes, declaración de IA, seudónimo y ausencia del nombre real;
 - `scripts/validation/validate_reader_test_kit.py`, que verifica las cuatro

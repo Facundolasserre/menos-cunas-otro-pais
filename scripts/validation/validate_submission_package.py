@@ -38,6 +38,7 @@ def main() -> None:
         "**Categoría:** Historia visual.",
         "**Título:** Menos cunas, otro país.",
         "**Seudónimo:** Umbral Sur.",
+        "**Tipo de visualización:** Infografía estadística / historia visual estática.",
         "OpenAI Codex",
         "No se utilizaron generadores de imágenes",
         "https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos",

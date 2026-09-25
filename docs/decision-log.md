@@ -145,3 +145,12 @@ facilitador y tres fichas anónimas. El guion separa exposiciones de 5 segundos,
 30 segundos y 2 minutos, incluye respuestas esperadas sólo para quien facilita
 y aplica una regla de aprobación previa. Un validador controla tamaño, páginas,
 fuentes incrustadas, texto extraíble, seudónimo y ausencia de identidad personal.
+
+## 2026-09-25 - Auditoría final de admisibilidad
+
+Se contrastaron la página vigente, las bases 2026 y el paquete de inscripción.
+No se detectaron incumplimientos técnicos o editoriales. Se confirmó que el
+formulario está activo y exige una cuenta de Google. Las verificaciones de edad,
+residencia o nacionalidad, incompatibilidades, autoría y aceptación de la cesión
+se mantienen fuera de Git por contener decisiones o datos personales. El archivo
+final se generará únicamente después de las pruebas física y de lectura.

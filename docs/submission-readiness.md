@@ -14,6 +14,8 @@ Fecha de control: 2026-09-25. Cierre indicado en las bases: 15 de octubre de
 | Formato admitido | Listo | PDF de una página; PNG alternativo |
 | Integridad del archivo | Listo | A3 exacto, vectorial, fuentes incrustadas |
 | Anonimato de la obra | Listo | Sin nombre real; control automático |
+| Página y bases vigentes | Verificadas | Coinciden en cierre y requisitos |
+| Acceso al formulario | Acción del participante | Requiere iniciar sesión con Google |
 | Prueba física A3 | Pendiente | Imprimir v0.6 al 100% |
 | Lectura por terceros | Preparada | Kit A4 listo; ejecutar con tres personas |
 | Archivo definitivo | Bloqueado por pruebas | Retirar marcas de prototipo después de aprobar |

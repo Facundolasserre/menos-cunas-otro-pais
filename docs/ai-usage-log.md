@@ -39,6 +39,9 @@ por las bases del concurso.
   de un control geométrico basado en los anchos tipográficos renderizados.
 - Asistencia en la diagramación del kit anónimo para la prueba externa y en la
   automatización de sus controles de formato e integridad.
+- Asistencia en la auditoría de admisibilidad contra las bases y la página
+  oficial vigentes, sin completar campos personales ni aceptar declaraciones
+  legales en nombre del participante.
 
 ## Límites adoptados
 
