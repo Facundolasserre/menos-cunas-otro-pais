@@ -72,6 +72,7 @@ Los prototipos vectoriales se construyen y validan con:
 .venv/bin/python scripts/design/build_storyboard_prototype.py
 .venv/bin/python scripts/validation/validate_storyboard_prototype.py
 .venv/bin/python scripts/validation/validate_visual_accessibility.py
+.venv/bin/python scripts/validation/validate_print_proof.py
 ```
 
 El constructor genera SVG, PNG y un manifiesto con dimensiones, paleta,
@@ -79,3 +80,5 @@ checksums y estado. El validador controla relación A3, integridad, contraste,
 texto vectorial, etiquetas indispensables, piso tipográfico y ausencia de
 imágenes incrustadas. La auditoría de accesibilidad simula tres deficiencias de
 visión cromática y comprueba que la lectura en gris no dependa sólo del color.
+El control de impresión verifica la página A3 exacta, texto extraíble, fuentes
+incrustadas y ausencia de imágenes rasterizadas dentro del PDF.

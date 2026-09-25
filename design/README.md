@@ -14,11 +14,16 @@ prototipo y `exports/prototype-v0.1.png` su render de inspección. El manifiesto
 adjunto fija dimensiones, checksums y paleta. Todos mantienen la advertencia
 “NO PRESENTAR” hasta completar los controles de `docs/visual-checklist.md`.
 
-`exports/prototype-v0.2.svg` es la versión vigente. Eleva el piso tipográfico a
-7,5 puntos y conserva la escala territorial común después de auditar el caso
-atípico de CABA. Su accesibilidad cromática y su revisión competitiva están
-documentadas en `docs/visual-accessibility.md`, `design/title-review.md` y
-`docs/prototype-v0.2-review.md`.
+`exports/prototype-v0.2.svg` documenta la segunda iteración. Elevó el piso
+tipográfico a 7,5 puntos y conservó la escala territorial común después de
+auditar el caso atípico de CABA. Su accesibilidad cromática y su revisión
+competitiva están documentadas en `docs/visual-accessibility.md`,
+`design/title-review.md` y `docs/prototype-v0.2-review.md`.
+
+`exports/prototype-v0.3.svg` y `exports/prototype-v0.3.png` son la prueba de
+legibilidad vigente. El PDF vectorial para impresión está en
+`output/pdf/prototype-v0.3-print-proof.pdf`; su revisión está documentada en
+`docs/prototype-v0.3-review.md`.
 
 La pieza final no se considerará validada hasta revisar su render a tamaño real
 con `docs/visual-checklist.md`.

@@ -101,3 +101,12 @@ paleta superó contraste AA y separación cromática bajo simulaciones completas
 de protanopia, deuteranopia y tritanopia; en gris, la lectura se preserva con
 forma, posición y etiquetado directo. La v0.2 sigue siendo un prototipo hasta
 completar impresión, lectura externa, seudónimo y exportación final.
+
+## 2026-09-25 - Prueba de impresión v0.3
+
+Se elevó el piso tipográfico a 8 puntos, con 8,2 para jurisdicciones y 8,5 para
+anotaciones de la serie. Se incorporó un PDF vectorial A3 exacto, con fuentes
+incrustadas y texto extraíble. La inspección del primer render detectó un roce en
+el pie metodológico; se corrigió con saltos controlados y mayor separación. La
+pieza sólo avanzará después de imprimir al 100% y superar una prueba estructurada
+con tres lectores externos.

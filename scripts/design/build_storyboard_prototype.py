@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Build the first data-bound visual-story prototype as SVG and PNG."""
+"""Build the current data-bound visual-story prototype as SVG, PNG and PDF."""
 
 from __future__ import annotations
 
+from datetime import UTC, datetime
 import hashlib
 import json
 import os
@@ -25,9 +26,11 @@ from matplotlib.patches import FancyArrowPatch  # noqa: E402
 
 PROCESSED = ROOT / "data" / "processed"
 EXPORTS = ROOT / "design" / "exports"
-VERSION = "v0.2"
+PDF_EXPORTS = ROOT / "output" / "pdf"
+VERSION = "v0.3"
 SVG_OUTPUT = EXPORTS / f"prototype-{VERSION}.svg"
 PNG_OUTPUT = EXPORTS / f"prototype-{VERSION}.png"
+PDF_OUTPUT = PDF_EXPORTS / f"prototype-{VERSION}-print-proof.pdf"
 MANIFEST_OUTPUT = EXPORTS / f"prototype-{VERSION}-manifest.json"
 
 BG = "#F7F4EC"
@@ -35,6 +38,8 @@ INK = "#1C252B"
 ACCENT = "#0F6370"
 NEUTRAL = "#6B665E"
 GRID = "#D8D2C7"
+A3_WIDTH_MM = 297
+A3_HEIGHT_MM = 420
 
 LEFT = 0.075
 RIGHT = 0.935
@@ -99,9 +104,9 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     fig.text(
         LEFT,
         0.976,
-        "PROTOTIPO 0.2 · NO PRESENTAR",
+        "PROTOTIPO 0.3 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         fontweight="bold",
         family=FONT,
     )
@@ -250,7 +255,7 @@ def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> None:
             ha=alignment,
             va="bottom" if offset[1] >= 0 else "top",
             color=INK if year != 2024 else ACCENT,
-            fontsize=7.7,
+            fontsize=8.5,
             fontweight="bold" if year in {2014, 2024} else "normal",
             family=FONT,
             linespacing=1.25,
@@ -332,7 +337,7 @@ def draw_age_shift(fig: plt.Figure, age: pd.DataFrame) -> None:
         0.478,
         "Participaciones sobre nacimientos con edad materna conocida.",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         family=FONT,
         ha="right",
     )
@@ -390,7 +395,7 @@ def draw_province_shift(fig: plt.Figure, province: pd.DataFrame) -> None:
     )
     axis.scatter(new, positions, s=29, color=ACCENT, zorder=3)
     axis.set_yticks(positions)
-    axis.set_yticklabels(ordered["province_label"], fontsize=7.6, color=INK)
+    axis.set_yticklabels(ordered["province_label"], fontsize=8.2, color=INK)
     axis.set_xticks([20, 30, 40, 50, 60, 70])
     axis.set_xticklabels(["20%", "30%", "40%", "50%", "60%", "70%"])
     axis.xaxis.tick_top()
@@ -403,7 +408,7 @@ def draw_province_shift(fig: plt.Figure, province: pd.DataFrame) -> None:
             y,
             format_pct_es(value),
             color=ACCENT,
-            fontsize=7.5,
+            fontsize=8,
             family=FONT,
             va="center",
             fontweight="bold",
@@ -421,7 +426,7 @@ def draw_province_shift(fig: plt.Figure, province: pd.DataFrame) -> None:
         f"{format_pct_es(sj_shift).removesuffix('%')} pp.  "
         "En las 24 también cayó la participación de menores de 25.",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         family=FONT,
     )
 
@@ -462,7 +467,7 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
         0.073,
         "Proyección externa DNP/RENAPER (2025).\nNo se empalma con la serie DEIS.",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         family=FONT,
         ha="right",
         linespacing=1.35,
@@ -471,34 +476,34 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
 
     figure_rule(fig, 0.049)
     footer = (
-        "Fuente principal: DEIS, Nacidos vivos 2014–2024. Año de registro, no necesariamente de ocurrencia. "
+        "Fuente principal: DEIS, Nacidos vivos 2014–2024. Año de registro, no necesariamente de ocurrencia.\n"
         "Edad desconocida excluida de porcentajes etarios: 1,16% (2014) y 0,26% (2024). "
         "Son conteos y composiciones, no tasas de fecundidad."
     )
     fig.text(
         LEFT,
-        0.036,
+        0.038,
         footer,
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         family=FONT,
         va="top",
-        wrap=True,
+        linespacing=1.25,
     )
     fig.text(
         LEFT,
-        0.017,
+        0.012,
         "Datos: argentina.gob.ar/salud/deis/datos/nacidosvivos   ·   Contexto educativo: argentina.gob.ar/node/477046",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         family=FONT,
     )
     fig.text(
         RIGHT,
-        0.017,
+        0.012,
         "SEUDÓNIMO PENDIENTE",
         color=NEUTRAL,
-        fontsize=7.5,
+        fontsize=8,
         fontweight="bold",
         family=FONT,
         ha="right",
@@ -529,8 +534,8 @@ def write_manifest() -> None:
         "status": "not_for_submission",
         "canvas": {
             "format": "A3 portrait",
-            "width_mm": 297,
-            "height_mm": 420,
+            "width_mm": A3_WIDTH_MM,
+            "height_mm": A3_HEIGHT_MM,
             "png_width_px": width,
             "png_height_px": height,
         },
@@ -542,6 +547,11 @@ def write_manifest() -> None:
             PNG_OUTPUT.name: {
                 "bytes": PNG_OUTPUT.stat().st_size,
                 "sha256": sha256(PNG_OUTPUT),
+            },
+            PDF_OUTPUT.name: {
+                "path": str(PDF_OUTPUT.relative_to(ROOT)),
+                "bytes": PDF_OUTPUT.stat().st_size,
+                "sha256": sha256(PDF_OUTPUT),
             },
         },
         "palette": {
@@ -564,6 +574,7 @@ def main() -> None:
     province = pd.read_csv(PROCESSED / "province_age_shift_2014_2024.csv")
 
     EXPORTS.mkdir(parents=True, exist_ok=True)
+    PDF_EXPORTS.mkdir(parents=True, exist_ok=True)
     (ROOT / "tmp" / "matplotlib").mkdir(parents=True, exist_ok=True)
 
     plt.rcParams.update(
@@ -576,9 +587,13 @@ def main() -> None:
             "ytick.color": NEUTRAL,
             "svg.fonttype": "none",
             "svg.hashsalt": f"menos-cunas-prototype-{VERSION}",
+            "pdf.fonttype": 42,
         }
     )
-    figure = plt.figure(figsize=(11.69, 16.54), facecolor=BG)
+    figure = plt.figure(
+        figsize=(A3_WIDTH_MM / 25.4, A3_HEIGHT_MM / 25.4),
+        facecolor=BG,
+    )
     draw_header(figure, national)
     figure_rule(figure, 0.795)
     draw_timeline(figure, national)
@@ -612,10 +627,26 @@ def main() -> None:
         facecolor=BG,
         metadata=png_metadata,
     )
+    pdf_metadata = {
+        "Title": metadata["Title"],
+        "Author": "Proyecto Contar con Datos 2026",
+        "Subject": metadata["Description"],
+        "Creator": "Matplotlib 3.11.2",
+        "Producer": "Proyecto Contar con Datos 2026",
+        "CreationDate": datetime(2026, 9, 25, tzinfo=UTC),
+        "ModDate": datetime(2026, 9, 25, tzinfo=UTC),
+    }
+    figure.savefig(
+        PDF_OUTPUT,
+        format="pdf",
+        facecolor=BG,
+        metadata=pdf_metadata,
+    )
     plt.close(figure)
     write_manifest()
     print(SVG_OUTPUT.relative_to(ROOT))
     print(PNG_OUTPUT.relative_to(ROOT))
+    print(PDF_OUTPUT.relative_to(ROOT))
     print(MANIFEST_OUTPUT.relative_to(ROOT))
 
 

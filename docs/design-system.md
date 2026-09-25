@@ -30,8 +30,9 @@ la serie principal DEIS.
 
 Se usa DejaVu Sans porque es libre, reproducible y está disponible junto con el
 motor de gráficos. Una sola familia sostiene la jerarquía mediante tamaño y
-peso. Los números permanecen alineados y ningún texto baja de 7,5 puntos en el
-prototipo A3. El piso se controla sobre el SVG; la prueba impresa determinará si
+peso. Los números permanecen alineados y ningún texto baja de 8 puntos en el
+prototipo A3. Las etiquetas provinciales usan 8,2 puntos y las anotaciones de la
+serie, 8,5. El piso se controla sobre el SVG; la prueba impresa determinará si
 debe crecer nuevamente.
 
 ## Escalas y marcas
@@ -60,4 +61,4 @@ con protanopia, deuteranopia y tritanopia; la escala de grises se sostiene por
 la redundancia entre forma, posición y etiquetas directas. Todavía faltan la
 impresión a tamaño real, una revisión de lectura por terceros y la sustitución
 del seudónimo pendiente. Por eso el archivo mantiene visible la marca
-“PROTOTIPO 0.2 · NO PRESENTAR”.
+“PROTOTIPO 0.3 · PRUEBA DE IMPRESIÓN · NO PRESENTAR”.

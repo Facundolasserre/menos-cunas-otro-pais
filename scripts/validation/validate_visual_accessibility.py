@@ -9,8 +9,9 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MANIFEST = ROOT / "design" / "exports" / "prototype-v0.2-manifest.json"
-SVG = ROOT / "design" / "exports" / "prototype-v0.2.svg"
+VERSION = "v0.3"
+MANIFEST = ROOT / "design" / "exports" / f"prototype-{VERSION}-manifest.json"
+SVG = ROOT / "design" / "exports" / f"prototype-{VERSION}.svg"
 REPORT = ROOT / "docs" / "visual-accessibility.md"
 
 # Full-severity matrices from Machado, Oliveira and Fernandes (2009), applied
@@ -103,7 +104,7 @@ def grayscale(color: str) -> str:
 
 
 def main() -> None:
-    require(MANIFEST.exists() and SVG.exists(), "v0.2 outputs must be built before accessibility validation")
+    require(MANIFEST.exists() and SVG.exists(), f"{VERSION} outputs must be built before accessibility validation")
     manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
     palette = manifest["palette"]
     base = {
@@ -146,7 +147,7 @@ def main() -> None:
     )
     report = f"""# Auditoría de accesibilidad visual
 
-Fecha: 2026-09-25. Prototipo evaluado: v0.2.
+Fecha: 2026-09-25. Prototipo evaluado: {VERSION}.
 
 ## Resultado
 

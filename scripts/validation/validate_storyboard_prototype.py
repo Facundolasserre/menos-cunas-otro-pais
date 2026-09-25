@@ -13,7 +13,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORTS = ROOT / "design" / "exports"
-VERSIONS = {"v0.1": None, "v0.2": 7.5}
+VERSIONS = {"v0.1": None, "v0.2": 7.5, "v0.3": 8.0}
 
 
 def require(condition: bool, message: str) -> None:
@@ -57,13 +57,18 @@ def validate_version(version: str, minimum_font_size: float | None) -> None:
     require(manifest["prototype"] == version, f"Manifest version mismatch: {version}")
     require(manifest["status"] == "not_for_submission", "Prototype status must remain explicit")
 
-    for path in (svg_path, png_path):
-        expected = manifest["files"][path.name]
+    for filename, expected in manifest["files"].items():
+        path = ROOT / expected["path"] if "path" in expected else EXPORTS / filename
+        require(path.exists(), f"Manifest output is missing: {path.relative_to(ROOT)}")
         require(path.stat().st_size == expected["bytes"], f"Size mismatch: {path.name}")
         require(sha256(path) == expected["sha256"], f"Checksum mismatch: {path.name}")
 
     with Image.open(png_path) as image:
-        require(image.size == (2805, 3969), f"Unexpected PNG dimensions: {image.size}")
+        expected_size = (
+            manifest["canvas"]["png_width_px"],
+            manifest["canvas"]["png_height_px"],
+        )
+        require(image.size == expected_size, f"Unexpected PNG dimensions: {image.size}")
         require(image.mode in {"RGB", "RGBA"}, f"Unexpected PNG mode: {image.mode}")
         background = tuple(int(manifest["palette"]["background"][index : index + 2], 16) for index in (1, 3, 5))
         require(image.convert("RGB").getpixel((0, 0)) == background, "PNG background mismatch")
@@ -81,10 +86,8 @@ def validate_version(version: str, minimum_font_size: float | None) -> None:
     lower_svg = svg.lower()
     require("<image" not in lower_svg and "data:image" not in lower_svg, "SVG embeds a raster image")
     display_version = version.removeprefix("v")
-    require(
-        f"prototipo {display_version} · no presentar" in lower_svg,
-        f"Prototype warning is missing: {version}",
-    )
+    require(f"prototipo {display_version}" in lower_svg, f"Prototype version warning is missing: {version}")
+    require("no presentar" in lower_svg, f"Prototype status warning is missing: {version}")
     require("seudónimo pendiente" in lower_svg, "Pseudonym placeholder is missing")
     for color in palette.values():
         require(color.lower() in lower_svg, f"Palette color missing from SVG: {color}")

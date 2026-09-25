@@ -1,6 +1,6 @@
 # Auditoría de accesibilidad visual
 
-Fecha: 2026-09-25. Prototipo evaluado: v0.2.
+Fecha: 2026-09-25. Prototipo evaluado: v0.3.
 
 ## Resultado
 

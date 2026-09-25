@@ -1,0 +1,33 @@
+{
+  "prototype": "v0.3",
+  "status": "not_for_submission",
+  "canvas": {
+    "format": "A3 portrait",
+    "width_mm": 297,
+    "height_mm": 420,
+    "png_width_px": 2806,
+    "png_height_px": 3968
+  },
+  "files": {
+    "prototype-v0.3.svg": {
+      "bytes": 52998,
+      "sha256": "5db2c5559cd515ce6d2967e2cabb86afbd46256c048b44b2a6284961f9c263ef"
+    },
+    "prototype-v0.3.png": {
+      "bytes": 649875,
+      "sha256": "352de27cd691af6993a3460505209c131124133d39e990df1d786f86a628a0c3"
+    },
+    "prototype-v0.3-print-proof.pdf": {
+      "path": "output/pdf/prototype-v0.3-print-proof.pdf",
+      "bytes": 47578,
+      "sha256": "4ebe5fd9f2c201776f42813b5257a2f7bcedcc7a14851045ee30953187bff8dd"
+    }
+  },
+  "palette": {
+    "background": "#F7F4EC",
+    "ink": "#1C252B",
+    "accent_2024": "#0F6370",
+    "neutral_2014": "#6B665E",
+    "grid": "#D8D2C7"
+  }
+}

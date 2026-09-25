@@ -27,6 +27,9 @@ por las bases del concurso.
   simulaciones de visión cromática, control automático del piso tipográfico y
   análisis de la escala territorial frente al valor atípico de CABA. Las
   decisiones y métricas quedan documentadas y reproducibles.
+- Asistencia en la construcción y auditoría de la prueba de impresión v0.3:
+  exportación PDF vectorial A3, verificación de fuentes, dimensiones y texto,
+  detección de una colisión en el pie y diseño del protocolo de lectura externa.
 
 ## Límites adoptados
 
