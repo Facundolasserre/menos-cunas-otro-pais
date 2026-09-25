@@ -25,7 +25,10 @@ Los controles de datos ya implementados son:
   indicadores cada cifra seleccionada para la narrativa y comprueba su presencia
   en el storyboard;
 - `scripts/validation/validate_storyboard_prototype.py`, que verifica archivos,
-  checksums, dimensiones, contraste, texto vectorial y etiquetas del prototipo;
+  checksums, dimensiones, contraste, texto vectorial, piso tipográfico y
+  etiquetas de todas las versiones del prototipo;
+- `scripts/validation/validate_visual_accessibility.py`, que simula protanopia,
+  deuteranopia y tritanopia, y verifica la codificación redundante en gris;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 

@@ -23,6 +23,10 @@ por las bases del concurso.
   sistema visual y automatización de controles de dimensiones, contraste,
   etiquetas e integridad. El archivo se identifica como prototipo y requiere
   revisión humana e impresión antes de convertirse en entrega.
+- Asistencia en la evaluación comparativa del título y el endurecimiento v0.2:
+  simulaciones de visión cromática, control automático del piso tipográfico y
+  análisis de la escala territorial frente al valor atípico de CABA. Las
+  decisiones y métricas quedan documentadas y reproducibles.
 
 ## Límites adoptados
 

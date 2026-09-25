@@ -66,13 +66,16 @@ El control recalcula magnitudes, períodos, composición nacional, extremos
 provinciales y excepciones modales, y comprueba que los valores redondeados
 aparezcan en `design/storyboard.md`.
 
-El primer prototipo vectorial se construye y valida con:
+Los prototipos vectoriales se construyen y validan con:
 
 ```bash
 .venv/bin/python scripts/design/build_storyboard_prototype.py
 .venv/bin/python scripts/validation/validate_storyboard_prototype.py
+.venv/bin/python scripts/validation/validate_visual_accessibility.py
 ```
 
 El constructor genera SVG, PNG y un manifiesto con dimensiones, paleta,
 checksums y estado. El validador controla relación A3, integridad, contraste,
-texto vectorial, etiquetas indispensables y ausencia de imágenes incrustadas.
+texto vectorial, etiquetas indispensables, piso tipográfico y ausencia de
+imágenes incrustadas. La auditoría de accesibilidad simula tres deficiencias de
+visión cromática y comprueba que la lectura en gris no dependa sólo del color.

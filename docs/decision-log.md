@@ -90,3 +90,14 @@ alarma asociado al rojo evaluado inicialmente. La proyección educativa se
 mantiene en tinta para distinguir su fuente externa. El prototipo fue aceptado
 como línea de base, pero conserva la marca “NO PRESENTAR” hasta superar pruebas
 impresas, simulaciones cromáticas, revisión del título y reemplazo del seudónimo.
+
+## 2026-09-25 - Endurecimiento visual v0.2
+
+Se ratificó el título **Menos cunas, otro país** con 91/100 frente a tres
+alternativas. Se mantuvo la escala territorial común: aun sin CABA, las otras
+23 jurisdicciones ocupan suficiente ancho útil, mientras que aislar el valor
+atípico escondería un hallazgo. El piso tipográfico subió a 7,5 puntos. La
+paleta superó contraste AA y separación cromática bajo simulaciones completas
+de protanopia, deuteranopia y tritanopia; en gris, la lectura se preserva con
+forma, posición y etiquetado directo. La v0.2 sigue siendo un prototipo hasta
+completar impresión, lectura externa, seudónimo y exportación final.

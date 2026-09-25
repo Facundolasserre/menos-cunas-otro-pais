@@ -25,9 +25,10 @@ from matplotlib.patches import FancyArrowPatch  # noqa: E402
 
 PROCESSED = ROOT / "data" / "processed"
 EXPORTS = ROOT / "design" / "exports"
-SVG_OUTPUT = EXPORTS / "prototype-v0.1.svg"
-PNG_OUTPUT = EXPORTS / "prototype-v0.1.png"
-MANIFEST_OUTPUT = EXPORTS / "prototype-v0.1-manifest.json"
+VERSION = "v0.2"
+SVG_OUTPUT = EXPORTS / f"prototype-{VERSION}.svg"
+PNG_OUTPUT = EXPORTS / f"prototype-{VERSION}.png"
+MANIFEST_OUTPUT = EXPORTS / f"prototype-{VERSION}-manifest.json"
 
 BG = "#F7F4EC"
 INK = "#1C252B"
@@ -98,7 +99,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     fig.text(
         LEFT,
         0.976,
-        "PROTOTIPO 0.1 · NO PRESENTAR",
+        "PROTOTIPO 0.2 · NO PRESENTAR",
         color=NEUTRAL,
         fontsize=7.5,
         fontweight="bold",
@@ -331,7 +332,7 @@ def draw_age_shift(fig: plt.Figure, age: pd.DataFrame) -> None:
         0.478,
         "Participaciones sobre nacimientos con edad materna conocida.",
         color=NEUTRAL,
-        fontsize=7.2,
+        fontsize=7.5,
         family=FONT,
         ha="right",
     )
@@ -402,7 +403,7 @@ def draw_province_shift(fig: plt.Figure, province: pd.DataFrame) -> None:
             y,
             format_pct_es(value),
             color=ACCENT,
-            fontsize=7.2,
+            fontsize=7.5,
             family=FONT,
             va="center",
             fontweight="bold",
@@ -420,7 +421,7 @@ def draw_province_shift(fig: plt.Figure, province: pd.DataFrame) -> None:
         f"{format_pct_es(sj_shift).removesuffix('%')} pp.  "
         "En las 24 también cayó la participación de menores de 25.",
         color=NEUTRAL,
-        fontsize=7.2,
+        fontsize=7.5,
         family=FONT,
     )
 
@@ -479,7 +480,7 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
         0.036,
         footer,
         color=NEUTRAL,
-        fontsize=7.0,
+        fontsize=7.5,
         family=FONT,
         va="top",
         wrap=True,
@@ -489,7 +490,7 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
         0.017,
         "Datos: argentina.gob.ar/salud/deis/datos/nacidosvivos   ·   Contexto educativo: argentina.gob.ar/node/477046",
         color=NEUTRAL,
-        fontsize=7.0,
+        fontsize=7.5,
         family=FONT,
     )
     fig.text(
@@ -497,7 +498,7 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
         0.017,
         "SEUDÓNIMO PENDIENTE",
         color=NEUTRAL,
-        fontsize=7.0,
+        fontsize=7.5,
         fontweight="bold",
         family=FONT,
         ha="right",
@@ -524,7 +525,7 @@ def write_manifest() -> None:
     with Image.open(PNG_OUTPUT) as image:
         width, height = image.size
     payload = {
-        "prototype": "v0.1",
+        "prototype": VERSION,
         "status": "not_for_submission",
         "canvas": {
             "format": "A3 portrait",
@@ -574,7 +575,7 @@ def main() -> None:
             "xtick.color": NEUTRAL,
             "ytick.color": NEUTRAL,
             "svg.fonttype": "none",
-            "svg.hashsalt": "menos-cunas-prototype-v0.1",
+            "svg.hashsalt": f"menos-cunas-prototype-{VERSION}",
         }
     )
     figure = plt.figure(figsize=(11.69, 16.54), facecolor=BG)
@@ -589,7 +590,7 @@ def main() -> None:
     draw_context_and_footer(figure)
 
     metadata = {
-        "Title": "Menos cunas, otro país — prototipo v0.1",
+        "Title": f"Menos cunas, otro país — prototipo {VERSION}",
         "Description": (
             "Historia visual sobre la caída de nacimientos registrados y el "
             "desplazamiento de la composición por edad materna en Argentina."

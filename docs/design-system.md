@@ -30,8 +30,9 @@ la serie principal DEIS.
 
 Se usa DejaVu Sans porque es libre, reproducible y está disponible junto con el
 motor de gráficos. Una sola familia sostiene la jerarquía mediante tamaño y
-peso. Los números permanecen alineados y las notas no bajan de 7 puntos en el
-prototipo A3; la prueba impresa determinará si deben crecer.
+peso. Los números permanecen alineados y ningún texto baja de 7,5 puntos en el
+prototipo A3. El piso se controla sobre el SVG; la prueba impresa determinará si
+debe crecer nuevamente.
 
 ## Escalas y marcas
 
@@ -53,8 +54,10 @@ prototipo A3; la prueba impresa determinará si deben crecer.
 
 ## Accesibilidad y estado
 
-El validador automático controla relación de aspecto, checksums, presencia de
-texto vectorial y contrastes WCAG. Todavía faltan la simulación de deficiencias
-cromáticas, la impresión a tamaño real, una revisión de lectura por terceros y
-la sustitución del seudónimo pendiente. Por eso el archivo mantiene visible la
-marca “PROTOTIPO 0.1 · NO PRESENTAR”.
+Los validadores automáticos controlan relación de aspecto, checksums, presencia
+de texto vectorial, piso tipográfico y contrastes WCAG. La paleta fue simulada
+con protanopia, deuteranopia y tritanopia; la escala de grises se sostiene por
+la redundancia entre forma, posición y etiquetas directas. Todavía faltan la
+impresión a tamaño real, una revisión de lectura por terceros y la sustitución
+del seudónimo pendiente. Por eso el archivo mantiene visible la marca
+“PROTOTIPO 0.2 · NO PRESENTAR”.

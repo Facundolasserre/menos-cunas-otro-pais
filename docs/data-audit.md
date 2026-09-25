@@ -1,6 +1,6 @@
 # Primera auditoría de datos DEIS
 
-Fecha de verificación: 2026-09-24.
+Fecha de verificación: 2026-09-25.
 
 Fuente: [DEIS – Nacidos vivos](https://www.argentina.gob.ar/salud/deis/datos/nacidosvivos).
 

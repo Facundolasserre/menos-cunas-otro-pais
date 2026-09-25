@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Validate the first visual-story prototype and its reproducibility manifest."""
+"""Validate every versioned visual-story prototype and its manifest."""
 
 from __future__ import annotations
 
 import hashlib
 import json
+import re
 from pathlib import Path
 
 from PIL import Image
@@ -12,9 +13,7 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORTS = ROOT / "design" / "exports"
-SVG = EXPORTS / "prototype-v0.1.svg"
-PNG = EXPORTS / "prototype-v0.1.png"
-MANIFEST = EXPORTS / "prototype-v0.1-manifest.json"
+VERSIONS = {"v0.1": None, "v0.2": 7.5}
 
 
 def require(condition: bool, message: str) -> None:
@@ -46,17 +45,24 @@ def contrast(first: str, second: str) -> float:
     return (high + 0.05) / (low + 0.05)
 
 
-def main() -> None:
-    require(SVG.exists() and PNG.exists() and MANIFEST.exists(), "Prototype outputs are incomplete")
-    manifest = json.loads(MANIFEST.read_text(encoding="utf-8"))
+def validate_version(version: str, minimum_font_size: float | None) -> None:
+    svg_path = EXPORTS / f"prototype-{version}.svg"
+    png_path = EXPORTS / f"prototype-{version}.png"
+    manifest_path = EXPORTS / f"prototype-{version}-manifest.json"
+    require(
+        svg_path.exists() and png_path.exists() and manifest_path.exists(),
+        f"Prototype outputs are incomplete: {version}",
+    )
+    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+    require(manifest["prototype"] == version, f"Manifest version mismatch: {version}")
     require(manifest["status"] == "not_for_submission", "Prototype status must remain explicit")
 
-    for path in (SVG, PNG):
+    for path in (svg_path, png_path):
         expected = manifest["files"][path.name]
         require(path.stat().st_size == expected["bytes"], f"Size mismatch: {path.name}")
         require(sha256(path) == expected["sha256"], f"Checksum mismatch: {path.name}")
 
-    with Image.open(PNG) as image:
+    with Image.open(png_path) as image:
         require(image.size == (2805, 3969), f"Unexpected PNG dimensions: {image.size}")
         require(image.mode in {"RGB", "RGBA"}, f"Unexpected PNG mode: {image.mode}")
         background = tuple(int(manifest["palette"]["background"][index : index + 2], 16) for index in (1, 3, 5))
@@ -71,10 +77,14 @@ def main() -> None:
     require(contrast(palette["accent_2024"], palette["background"]) >= 4.5, "Accent contrast below AA")
     require(contrast(palette["neutral_2014"], palette["background"]) >= 4.5, "Neutral contrast below AA")
 
-    svg = SVG.read_text(encoding="utf-8")
+    svg = svg_path.read_text(encoding="utf-8")
     lower_svg = svg.lower()
     require("<image" not in lower_svg and "data:image" not in lower_svg, "SVG embeds a raster image")
-    require("prototipo 0.1 · no presentar" in lower_svg, "Prototype warning is missing")
+    display_version = version.removeprefix("v")
+    require(
+        f"prototipo {display_version} · no presentar" in lower_svg,
+        f"Prototype warning is missing: {version}",
+    )
     require("seudónimo pendiente" in lower_svg, "Pseudonym placeholder is missing")
     for color in palette.values():
         require(color.lower() in lower_svg, f"Palette color missing from SVG: {color}")
@@ -92,8 +102,22 @@ def main() -> None:
     for label in required_labels:
         require(label in svg, f"Required visible label missing: {label}")
 
-    print("OK: prototype outputs match their manifest and preserve vector text.")
-    print("OK: A3 ratio, palette semantics and AA/AAA contrast thresholds verified.")
+    if minimum_font_size is not None:
+        sizes = [float(value) for value in re.findall(r"font-size:\s*([0-9.]+)px", svg)]
+        require(sizes, f"No SVG font sizes found: {version}")
+        require(
+            min(sizes) >= minimum_font_size,
+            f"Minimum font size is {min(sizes):.1f}px, expected {minimum_font_size:.1f}px: {version}",
+        )
+
+    print(f"OK: {version} matches its manifest and preserves vector text.")
+
+
+def main() -> None:
+    for version, minimum_font_size in VERSIONS.items():
+        validate_version(version, minimum_font_size)
+
+    print("OK: A3 ratio, palette semantics, typography and contrast thresholds verified.")
 
 
 if __name__ == "__main__":
