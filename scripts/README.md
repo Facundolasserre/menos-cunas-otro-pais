@@ -21,3 +21,16 @@ La primera auditoría estructural de DEIS se ejecuta con:
 ```bash
 python scripts/validation/audit_deis_nacidos_vivos.py
 ```
+
+La normalización y su validación independiente se ejecutan con el entorno del
+proyecto:
+
+```bash
+.venv/bin/python scripts/cleaning/normalize_deis_nacidos_vivos.py
+.venv/bin/python scripts/validation/validate_normalized_data.py
+```
+
+La primera orden genera un Parquet local y no versionado. La segunda verifica
+esquema, dominios, duplicados, sumas, texto, banderas de calidad y controles
+oficiales de 2024; luego regenera los CSV pequeños de `data/processed/` y
+`docs/data-quality.md`.

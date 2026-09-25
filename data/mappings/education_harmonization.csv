@@ -1,0 +1,13 @@
+source_year_start,source_year_end,source_code,source_label_expected,harmonized_code,harmonized_label
+2014,2023,1,Hasta Primaria/C.EGB Completa,1,Hasta primaria completa
+2014,2023,2,Secundaria/Polimodal Incompleta,2,Secundaria incompleta
+2014,2023,3,Secundario/Polimodal Completa y más,3,Secundaria completa o más
+2014,2023,4,Sin especificar,4,Sin especificar
+2024,2024,1,Sin instrucción,1,Hasta primaria completa
+2024,2024,2,Primaria/C. EGB Incompleta,1,Hasta primaria completa
+2024,2024,3,Primaria/C. EGB Completa,1,Hasta primaria completa
+2024,2024,4,Secundaria/Polimodal Incompleta,2,Secundaria incompleta
+2024,2024,5,Secundaria/Polimodal Completa,3,Secundaria completa o más
+2024,2024,6,Terciaria/Universitaria Incompleta,3,Secundaria completa o más
+2024,2024,7,Terciaria/Universitaria Completa,3,Secundaria completa o más
+2024,2024,8,Sin especificar,4,Sin especificar

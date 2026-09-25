@@ -11,9 +11,10 @@ sobre la estructura demográfica del país?
 
 ## Estado
 
-Fase inicial: preparación metodológica y auditoría de fuentes. El título es
-provisorio y toda afirmación permanece como hipótesis hasta ser validada con los
-datos oficiales.
+Fuentes 2014–2024 descargadas, auditadas, normalizadas y conciliadas con 41
+controles del Anuario DEIS 2024. La siguiente fase es el análisis exploratorio de
+magnitud, territorio y edad. El título es provisorio y toda explicación causal
+permanece como hipótesis hasta contar con evidencia compatible.
 
 ## Principios de trabajo
 
@@ -66,4 +67,6 @@ Las descargas permanecen fuera de Git:
 ```bash
 python scripts/download/download_deis_nacidos_vivos.py
 python scripts/validation/audit_deis_nacidos_vivos.py
+python scripts/cleaning/normalize_deis_nacidos_vivos.py
+python scripts/validation/validate_normalized_data.py
 ```

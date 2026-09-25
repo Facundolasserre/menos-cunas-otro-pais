@@ -1,0 +1,7 @@
+issue,description,year,source_rows,registered_births,handling
+missing_birth_type,Código de tipo de parto vacío en la fuente,2017,1,10,Conservar; excluir sólo del análisis por tipo de parto
+undocumented_sex_code,Código de sexo 3 ausente del diccionario DEIS provisto,2024,6,6,Conservar separado; agrupar con no especificado sólo al conciliar el anuario 2024
+implausible_gestation_weight,Gestación menor de 22 semanas con peso de 2500 g o más,2014,19,20,Conservar; excluir del análisis conjunto gestación-peso o mostrar sensibilidad
+implausible_gestation_weight,Gestación menor de 22 semanas con peso de 2500 g o más,2017,15,19,Conservar; excluir del análisis conjunto gestación-peso o mostrar sensibilidad
+implausible_gestation_weight,Gestación menor de 22 semanas con peso de 2500 g o más,2018,8,8,Conservar; excluir del análisis conjunto gestación-peso o mostrar sensibilidad
+implausible_gestation_weight,Gestación menor de 22 semanas con peso de 2500 g o más,2024,1,1,Conservar; excluir del análisis conjunto gestación-peso o mostrar sensibilidad

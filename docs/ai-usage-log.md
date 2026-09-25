@@ -12,6 +12,9 @@ por las bases del concurso.
 - Síntesis de bibliografía de visualización de información en principios y
   controles operativos.
 - Asistencia en la redacción de documentación metodológica.
+- Asistencia en la programación y revisión de la descarga, normalización,
+  armonización y validación de datos; todos los controles quedan reproducibles
+  y sus resultados son revisados antes de cada commit.
 
 ## Límites adoptados
 
@@ -20,4 +23,3 @@ por las bases del concurso.
 - Mantener intervención y decisión humana directa sobre análisis, narrativa,
   codificaciones visuales, composición y pieza final.
 - Revisar y declarar herramientas, etapas y finalidad antes de la postulación.
-

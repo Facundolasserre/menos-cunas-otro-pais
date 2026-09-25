@@ -38,3 +38,11 @@ Visualización de la Información, con 241 páginas en total. La revisión confi
 la guía operativa ya documentada: separar exploración y explicación, estructurar
 el pipeline completo, respetar escalas de medición, privilegiar comparaciones
 controladas y auditar agregaciones, fuentes, errores y explicaciones alternativas.
+
+## 2026-09-24 - Tratamiento de anomalías
+
+La limpieza no elimina ni imputa observaciones silenciosamente. Se conservan y
+se señalan un tipo de parto vacío en 2017, seis casos con código de sexo 3 no
+documentado en 2024 y 48 nacimientos con la combinación menos de 22 semanas y
+2.500 gramos o más. Cada caso se excluye únicamente del análisis que afectaría,
+manteniendo intactos los totales por año, territorio y edad.

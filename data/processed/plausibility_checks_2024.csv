@@ -1,0 +1,7 @@
+check,source_rows,registered_births,expected_rows,handling,passed
+gestation_lt22_weight_ge2500,1,1,1,Se conserva con bandera de calidad,True
+gestation_lt22_weight_ge3500,0,0,0,Sin casos,True
+gestation_22_23_weight_ge2500,0,0,0,Sin casos,True
+gestation_24_27_weight_ge3500,0,0,0,Sin casos,True
+gestation_42plus_weight_lt500,0,0,0,Sin casos,True
+mother_under15_tertiary_education,0,0,0,Sin casos,True
