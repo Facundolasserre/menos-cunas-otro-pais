@@ -119,3 +119,13 @@ la serie. Las etiquetas se desplazaron a zonas libres y se conectaron mediante
 líderes finos y neutrales; 2020 quedó debajo de su punto. El constructor ahora
 falla automáticamente si la serie entra en el rectángulo ampliado de cualquier
 anotación. La v0.4 reemplaza a v0.3 como prueba de impresión.
+
+## 2026-09-25 - Seudónimo y paquete de inscripción v0.5
+
+Se seleccionó **Umbral Sur** con 98/100 frente a tres alternativas, priorizando
+anonimato, distinción, afinidad temática y tono profesional. No revela identidad,
+ciudad, institución ni profesión. La metodología para el formulario quedó en
+178 palabras e incluye procedencia, tratamiento, decisiones visuales y la
+declaración obligatoria de OpenAI Codex. Un control automático verifica el
+límite, las fuentes abiertas, el seudónimo y la ausencia del nombre real. La
+v0.5 incorpora el seudónimo, pero mantiene “NO PRESENTAR” hasta la prueba física.

@@ -32,6 +32,9 @@ por las bases del concurso.
   detección de una colisión en el pie y diseño del protocolo de lectura externa.
 - Asistencia en la corrección v0.4 de anotaciones superpuestas con la serie
   temporal y en la automatización de un control geométrico que impide regresiones.
+- Asistencia en la comparación de seudónimos y la redacción del paquete de
+  inscripción v0.5, incluida una descripción metodológica sujeta a validación
+  automática de extensión, fuentes, transparencia de IA y anonimato.
 
 ## Límites adoptados
 

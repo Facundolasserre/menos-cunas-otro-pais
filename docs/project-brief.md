@@ -2,7 +2,7 @@
 
 ## Decisión editorial inicial
 
-**Título provisorio:** Menos cunas, otro país  
+**Título:** Menos cunas, otro país
 **Categoría:** Historia visual  
 **Cobertura temporal principal:** 2014-2024  
 **Cobertura geográfica:** Argentina, con comparación entre jurisdicciones  

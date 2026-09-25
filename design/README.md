@@ -21,10 +21,10 @@ competitiva están documentadas en `docs/visual-accessibility.md`,
 `design/title-review.md` y `docs/prototype-v0.2-review.md`.
 
 `exports/prototype-v0.3.svg` y `exports/prototype-v0.3.png` documentan la primera
-prueba de impresión. La v0.4 es la prueba vigente: separa las anotaciones de la
-serie temporal mediante posiciones libres y líderes neutrales. El PDF vectorial
-está en `output/pdf/prototype-v0.4-print-proof.pdf`; la corrección se documenta
-en `docs/prototype-v0.4-review.md`.
+prueba de impresión. La v0.4 separó las anotaciones de la serie temporal mediante
+posiciones libres y líderes neutrales. La v0.5 es la prueba vigente e incorpora
+el seudónimo seleccionado. Su PDF vectorial está en
+`output/pdf/prototype-v0.5-print-proof.pdf`.
 
 La pieza final no se considerará validada hasta revisar su render a tamaño real
 con `docs/visual-checklist.md`.

@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION = "v0.4"
+VERSION = "v0.5"
 PDF = ROOT / "output" / "pdf" / f"prototype-{VERSION}-print-proof.pdf"
 MANIFEST = ROOT / "design" / "exports" / f"prototype-{VERSION}-manifest.json"
 
@@ -71,7 +71,7 @@ def main() -> None:
 
     text = page.extract_text() or ""
     required_text = [
-        "PROTOTIPO 0.4",
+        "PROTOTIPO 0.5",
         "PRUEBA DE IMPRESIÓN",
         "NO PRESENTAR",
         "Menos cunas, otro país",
@@ -80,7 +80,7 @@ def main() -> None:
         "Formosa",
         "Ciudad Aut. de Buenos Aires",
         "Proyección externa DNP/RENAPER",
-        "SEUDÓNIMO PENDIENTE",
+        "UMBRAL SUR",
     ]
     for label in required_text:
         require(label in text, f"Text is not extractable from PDF: {label}")

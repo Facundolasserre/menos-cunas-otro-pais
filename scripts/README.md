@@ -73,6 +73,7 @@ Los prototipos vectoriales se construyen y validan con:
 .venv/bin/python scripts/validation/validate_storyboard_prototype.py
 .venv/bin/python scripts/validation/validate_visual_accessibility.py
 .venv/bin/python scripts/validation/validate_print_proof.py
+.venv/bin/python scripts/validation/validate_submission_package.py
 ```
 
 El constructor genera SVG, PNG y un manifiesto con dimensiones, paleta,
@@ -85,3 +86,5 @@ incrustadas y ausencia de imágenes rasterizadas dentro del PDF.
 
 El constructor también falla si la línea de la serie temporal invade el área
 de una anotación directa, incluido un margen de seguridad alrededor del texto.
+El control de inscripción verifica el límite de 200 palabras, los campos
+obligatorios, las fuentes abiertas, la declaración de IA y el anonimato.

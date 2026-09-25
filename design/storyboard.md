@@ -7,7 +7,7 @@ contrae y la composición de los nacimientos se desplaza hacia edades maternas
 mayores. La dirección visual será consistente: descenso para la cantidad y
 movimiento de izquierda a derecha para la edad.
 
-## Título de trabajo
+## Título
 
 **Menos cunas, otro país**
 

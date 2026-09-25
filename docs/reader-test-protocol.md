@@ -1,6 +1,6 @@
 # Protocolo de prueba de lectura
 
-Versión objetivo: prototipo v0.4 impreso en A3 al 100%.
+Versión objetivo: prototipo v0.5 impreso en A3 al 100%.
 
 ## Objetivo
 

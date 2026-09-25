@@ -9,7 +9,7 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION = "v0.4"
+VERSION = "v0.5"
 MANIFEST = ROOT / "design" / "exports" / f"prototype-{VERSION}-manifest.json"
 SVG = ROOT / "design" / "exports" / f"prototype-{VERSION}.svg"
 REPORT = ROOT / "docs" / "visual-accessibility.md"

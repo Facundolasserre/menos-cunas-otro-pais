@@ -28,7 +28,8 @@ from matplotlib.text import Text  # noqa: E402
 PROCESSED = ROOT / "data" / "processed"
 EXPORTS = ROOT / "design" / "exports"
 PDF_EXPORTS = ROOT / "output" / "pdf"
-VERSION = "v0.4"
+VERSION = "v0.5"
+PSEUDONYM = "UMBRAL SUR"
 SVG_OUTPUT = EXPORTS / f"prototype-{VERSION}.svg"
 PNG_OUTPUT = EXPORTS / f"prototype-{VERSION}.png"
 PDF_OUTPUT = PDF_EXPORTS / f"prototype-{VERSION}-print-proof.pdf"
@@ -105,7 +106,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     fig.text(
         LEFT,
         0.976,
-        "PROTOTIPO 0.4 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
+        "PROTOTIPO 0.5 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
         color=NEUTRAL,
         fontsize=8,
         fontweight="bold",
@@ -537,7 +538,7 @@ def draw_context_and_footer(fig: plt.Figure) -> None:
     fig.text(
         RIGHT,
         0.012,
-        "SEUDÓNIMO PENDIENTE",
+        PSEUDONYM,
         color=NEUTRAL,
         fontsize=8,
         fontweight="bold",

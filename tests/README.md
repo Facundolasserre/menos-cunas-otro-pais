@@ -31,6 +31,8 @@ Los controles de datos ya implementados son:
   deuteranopia y tritanopia, y verifica la codificación redundante en gris;
 - `scripts/validation/validate_print_proof.py`, que verifica tamaño físico A3,
   página única, texto extraíble, fuentes incrustadas y contenido vectorial;
+- `scripts/validation/validate_submission_package.py`, que verifica el límite de
+  palabras, fuentes, declaración de IA, seudónimo y ausencia del nombre real;
 - el constructor del prototipo, que rechaza solapamientos entre la línea temporal
   y los rectángulos ampliados de sus anotaciones;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,

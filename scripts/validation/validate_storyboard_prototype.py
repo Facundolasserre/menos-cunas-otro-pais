@@ -13,7 +13,13 @@ from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[2]
 EXPORTS = ROOT / "design" / "exports"
-VERSIONS = {"v0.1": None, "v0.2": 7.5, "v0.3": 8.0, "v0.4": 8.0}
+VERSIONS = {
+    "v0.1": None,
+    "v0.2": 7.5,
+    "v0.3": 8.0,
+    "v0.4": 8.0,
+    "v0.5": 8.0,
+}
 
 
 def require(condition: bool, message: str) -> None:
@@ -88,7 +94,11 @@ def validate_version(version: str, minimum_font_size: float | None) -> None:
     display_version = version.removeprefix("v")
     require(f"prototipo {display_version}" in lower_svg, f"Prototype version warning is missing: {version}")
     require("no presentar" in lower_svg, f"Prototype status warning is missing: {version}")
-    require("seudónimo pendiente" in lower_svg, "Pseudonym placeholder is missing")
+    if version == "v0.5":
+        require("umbral sur" in lower_svg, "Selected pseudonym is missing")
+        require("seudónimo pendiente" not in lower_svg, "Pseudonym placeholder remains")
+    else:
+        require("seudónimo pendiente" in lower_svg, "Pseudonym placeholder is missing")
     for color in palette.values():
         require(color.lower() in lower_svg, f"Palette color missing from SVG: {color}")
 
