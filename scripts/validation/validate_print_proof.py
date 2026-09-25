@@ -10,7 +10,7 @@ from pypdf import PdfReader
 
 
 ROOT = Path(__file__).resolve().parents[2]
-VERSION = "v0.5"
+VERSION = "v0.6"
 PDF = ROOT / "output" / "pdf" / f"prototype-{VERSION}-print-proof.pdf"
 MANIFEST = ROOT / "design" / "exports" / f"prototype-{VERSION}-manifest.json"
 
@@ -71,7 +71,7 @@ def main() -> None:
 
     text = page.extract_text() or ""
     required_text = [
-        "PROTOTIPO 0.5",
+        "PROTOTIPO 0.6",
         "PRUEBA DE IMPRESIÓN",
         "NO PRESENTAR",
         "Menos cunas, otro país",

@@ -61,4 +61,4 @@ con protanopia, deuteranopia y tritanopia; la escala de grises se sostiene por
 la redundancia entre forma, posición y etiquetas directas. Todavía faltan la
 impresión a tamaño real, una revisión de lectura por terceros y la sustitución
 del seudónimo pendiente. Por eso el archivo mantiene visible la marca
-“PROTOTIPO 0.5 · PRUEBA DE IMPRESIÓN · NO PRESENTAR”.
+“PROTOTIPO 0.6 · PRUEBA DE IMPRESIÓN · NO PRESENTAR”.

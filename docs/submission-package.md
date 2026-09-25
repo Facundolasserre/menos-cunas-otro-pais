@@ -64,7 +64,7 @@ Si el formulario incorpora un campo separado, utilizar:
 
 ## Archivo
 
-La prueba vigente es `output/pdf/prototype-v0.5-print-proof.pdf`. No debe cargarse
+La prueba vigente es `output/pdf/prototype-v0.6-print-proof.pdf`. No debe cargarse
 al formulario mientras conserve la marca “PRUEBA DE IMPRESIÓN · NO PRESENTAR”.
 
 ## Datos personales pendientes

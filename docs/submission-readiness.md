@@ -7,14 +7,14 @@ Fecha de control: 2026-09-25. Cierre indicado en las bases: 15 de octubre de
 | --- | --- | --- |
 | Categoría | Listo | Historia visual |
 | Título | Listo | Menos cunas, otro país |
-| Seudónimo | Listo | Umbral Sur; incorporado en v0.5 |
+| Seudónimo | Listo | Umbral Sur; incorporado desde v0.5 |
 | Descripción metodológica | Listo | 178/200 palabras |
 | Fuentes abiertas | Listo | DEIS y DNP con enlaces oficiales |
 | Declaración de IA | Listo | Herramienta, etapas y finalidad explicitadas |
 | Formato admitido | Listo | PDF de una página; PNG alternativo |
 | Integridad del archivo | Listo | A3 exacto, vectorial, fuentes incrustadas |
 | Anonimato de la obra | Listo | Sin nombre real; control automático |
-| Prueba física A3 | Pendiente | Imprimir v0.5 al 100% |
+| Prueba física A3 | Pendiente | Imprimir v0.6 al 100% |
 | Lectura por terceros | Pendiente | Aplicar protocolo con tres personas |
 | Archivo definitivo | Bloqueado por pruebas | Retirar marcas de prototipo después de aprobar |
 | Elegibilidad personal | Confirmación del participante | Mayoría de edad, nacionalidad o residencia y ausencia de incompatibilidades |

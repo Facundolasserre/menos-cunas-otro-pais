@@ -34,7 +34,8 @@ Los controles de datos ya implementados son:
 - `scripts/validation/validate_submission_package.py`, que verifica el límite de
   palabras, fuentes, declaración de IA, seudónimo y ausencia del nombre real;
 - el constructor del prototipo, que rechaza solapamientos entre la línea temporal
-  y los rectángulos ampliados de sus anotaciones;
+  y los rectángulos ampliados de sus anotaciones, y exige separación entre la
+  flecha principal y ambos números destacados;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 

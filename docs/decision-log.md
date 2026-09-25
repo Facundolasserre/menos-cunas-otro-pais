@@ -129,3 +129,11 @@ ciudad, institución ni profesión. La metodología para el formulario quedó en
 declaración obligatoria de OpenAI Codex. Un control automático verifica el
 límite, las fuentes abiertas, el seudónimo y la ausencia del nombre real. La
 v0.5 incorpora el seudónimo, pero mantiene “NO PRESENTAR” hasta la prueba física.
+
+## 2026-09-25 - Separación de la flecha principal v0.6
+
+La revisión en pantalla detectó que los extremos de la flecha principal quedaban
+demasiado próximos a 777.012 y 413.135. Se descartó una corrección basada en
+coordenadas fijas: el constructor ahora mide el ancho renderizado de ambos
+números, reserva 12 puntos ópticos por lado y falla si la separación efectiva
+baja de ocho puntos. La v0.6 reemplaza a v0.5 como prueba de impresión.

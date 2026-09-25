@@ -22,9 +22,10 @@ competitiva están documentadas en `docs/visual-accessibility.md`,
 
 `exports/prototype-v0.3.svg` y `exports/prototype-v0.3.png` documentan la primera
 prueba de impresión. La v0.4 separó las anotaciones de la serie temporal mediante
-posiciones libres y líderes neutrales. La v0.5 es la prueba vigente e incorpora
-el seudónimo seleccionado. Su PDF vectorial está en
-`output/pdf/prototype-v0.5-print-proof.pdf`.
+posiciones libres y líderes neutrales. La v0.5 incorporó el seudónimo seleccionado.
+La v0.6 es la prueba vigente: calcula la flecha principal desde el ancho real de
+los números y exige una separación mínima. Su PDF vectorial está en
+`output/pdf/prototype-v0.6-print-proof.pdf`.
 
 La pieza final no se considerará validada hasta revisar su render a tamaño real
 con `docs/visual-checklist.md`.

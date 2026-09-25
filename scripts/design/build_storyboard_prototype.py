@@ -28,7 +28,7 @@ from matplotlib.text import Text  # noqa: E402
 PROCESSED = ROOT / "data" / "processed"
 EXPORTS = ROOT / "design" / "exports"
 PDF_EXPORTS = ROOT / "output" / "pdf"
-VERSION = "v0.5"
+VERSION = "v0.6"
 PSEUDONYM = "UMBRAL SUR"
 SVG_OUTPUT = EXPORTS / f"prototype-{VERSION}.svg"
 PNG_OUTPUT = EXPORTS / f"prototype-{VERSION}.png"
@@ -97,7 +97,10 @@ def draw_year_key(fig: plt.Figure, y: float) -> None:
     )
 
 
-def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
+def draw_header(
+    fig: plt.Figure,
+    national: pd.DataFrame,
+) -> tuple[FancyArrowPatch, tuple[Text, Text]]:
     first = int(national.loc[2014, "registered_births"])
     last = int(national.loc[2024, "registered_births"])
     change = last - first
@@ -106,7 +109,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     fig.text(
         LEFT,
         0.976,
-        "PROTOTIPO 0.5 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
+        "PROTOTIPO 0.6 · PRUEBA DE IMPRESIÓN · NO PRESENTAR",
         color=NEUTRAL,
         fontsize=8,
         fontweight="bold",
@@ -135,7 +138,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
     )
 
     y_number = 0.837
-    fig.text(
+    left_number = fig.text(
         LEFT,
         y_number,
         format_int_es(first),
@@ -153,7 +156,7 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
         fontsize=9,
         family=FONT,
     )
-    fig.text(
+    right_number = fig.text(
         RIGHT,
         y_number,
         format_int_es(last),
@@ -174,9 +177,26 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
         ha="right",
     )
 
+    # Let the rendered numerals—not hard-coded guesses—set the arrow span. The
+    # 12 pt optical gap keeps both the shaft and arrowhead clear of the figures.
+    fig.canvas.draw()
+    renderer = fig.canvas.get_renderer()
+    figure_coordinates = fig.transFigure.inverted()
+    left_box = left_number.get_window_extent(renderer=renderer).transformed(
+        figure_coordinates
+    )
+    right_box = right_number.get_window_extent(renderer=renderer).transformed(
+        figure_coordinates
+    )
+    optical_gap = (12 / 72) / fig.get_figwidth()
+    arrow_start = left_box.x1 + optical_gap
+    arrow_end = right_box.x0 - optical_gap
+    if arrow_start >= arrow_end:
+        raise RuntimeError("Hero numbers leave no safe horizontal span for the arrow")
+
     arrow = FancyArrowPatch(
-        (0.255, y_number),
-        (0.745, y_number),
+        (arrow_start, y_number),
+        (arrow_end, y_number),
         transform=fig.transFigure,
         arrowstyle="-|>",
         mutation_scale=13,
@@ -205,6 +225,31 @@ def draw_header(fig: plt.Figure, national: pd.DataFrame) -> None:
         family=FONT,
         ha="center",
     )
+
+    return arrow, (left_number, right_number)
+
+
+def validate_header_clearance(
+    fig: plt.Figure,
+    arrow: FancyArrowPatch,
+    number_texts: tuple[Text, Text],
+    minimum_gap_points: float = 8,
+) -> None:
+    """Fail when the hero arrow crowds either headline number."""
+    renderer = fig.canvas.get_renderer()
+    arrow_box = arrow.get_window_extent(renderer=renderer)
+    left_box, right_box = (
+        text.get_window_extent(renderer=renderer) for text in number_texts
+    )
+    minimum_gap_pixels = minimum_gap_points * fig.dpi / 72
+    left_gap = arrow_box.x0 - left_box.x1
+    right_gap = right_box.x0 - arrow_box.x1
+    if left_gap < minimum_gap_pixels or right_gap < minimum_gap_pixels:
+        raise RuntimeError(
+            "Hero arrow clearance below "
+            f"{minimum_gap_points:g} pt: left={left_gap * 72 / fig.dpi:.1f} pt, "
+            f"right={right_gap * 72 / fig.dpi:.1f} pt"
+        )
 
 
 def draw_timeline(fig: plt.Figure, national: pd.DataFrame) -> tuple[Line2D, list[object]]:
@@ -631,7 +676,7 @@ def main() -> None:
         figsize=(A3_WIDTH_MM / 25.4, A3_HEIGHT_MM / 25.4),
         facecolor=BG,
     )
-    draw_header(figure, national)
+    hero_arrow, hero_numbers = draw_header(figure, national)
     figure_rule(figure, 0.795)
     timeline_line, timeline_annotations = draw_timeline(figure, national)
     figure_rule(figure, 0.628)
@@ -641,6 +686,7 @@ def main() -> None:
     figure_rule(figure, 0.124)
     draw_context_and_footer(figure)
     figure.canvas.draw()
+    validate_header_clearance(figure, hero_arrow, hero_numbers)
     validate_timeline_clearance(figure, timeline_line, timeline_annotations)
 
     metadata = {

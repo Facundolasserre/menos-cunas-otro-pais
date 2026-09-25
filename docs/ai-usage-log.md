@@ -35,6 +35,8 @@ por las bases del concurso.
 - Asistencia en la comparación de seudónimos y la redacción del paquete de
   inscripción v0.5, incluida una descripción metodológica sujeta a validación
   automática de extensión, fuentes, transparencia de IA y anonimato.
+- Asistencia en la corrección v0.6 de la flecha principal y en la incorporación
+  de un control geométrico basado en los anchos tipográficos renderizados.
 
 ## Límites adoptados
 

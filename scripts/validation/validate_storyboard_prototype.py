@@ -19,6 +19,7 @@ VERSIONS = {
     "v0.3": 8.0,
     "v0.4": 8.0,
     "v0.5": 8.0,
+    "v0.6": 8.0,
 }
 
 
@@ -94,7 +95,7 @@ def validate_version(version: str, minimum_font_size: float | None) -> None:
     display_version = version.removeprefix("v")
     require(f"prototipo {display_version}" in lower_svg, f"Prototype version warning is missing: {version}")
     require("no presentar" in lower_svg, f"Prototype status warning is missing: {version}")
-    if version == "v0.5":
+    if version in {"v0.5", "v0.6"}:
         require("umbral sur" in lower_svg, "Selected pseudonym is missing")
         require("seudónimo pendiente" not in lower_svg, "Pseudonym placeholder remains")
     else:

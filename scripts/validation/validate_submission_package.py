@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 PACKAGE = ROOT / "docs" / "submission-package.md"
-SVG = ROOT / "design" / "exports" / "prototype-v0.5.svg"
+SVG = ROOT / "design" / "exports" / "prototype-v0.6.svg"
 
 
 def require(condition: bool, message: str) -> None:
@@ -18,7 +18,7 @@ def require(condition: bool, message: str) -> None:
 
 
 def main() -> None:
-    require(PACKAGE.exists() and SVG.exists(), "Submission package and v0.5 must exist")
+    require(PACKAGE.exists() and SVG.exists(), "Submission package and v0.6 must exist")
     package = PACKAGE.read_text(encoding="utf-8")
     svg = SVG.read_text(encoding="utf-8")
     normalized_package = " ".join(package.split())
@@ -54,8 +54,8 @@ def main() -> None:
             "Personal identity leaked into anonymous material",
         )
 
-    require("UMBRAL SUR" in svg, "Pseudonym is missing from v0.5 artwork")
-    require("SEUDÓNIMO PENDIENTE" not in svg, "Pseudonym placeholder remains in v0.5 artwork")
+    require("UMBRAL SUR" in svg, "Pseudonym is missing from v0.6 artwork")
+    require("SEUDÓNIMO PENDIENTE" not in svg, "Pseudonym placeholder remains in v0.6 artwork")
 
     print(f"OK: submission description contains {word_count}/200 words.")
     print("OK: category, title, pseudonym, open sources and AI disclosure are present.")

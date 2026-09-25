@@ -85,6 +85,7 @@ El control de impresión verifica la página A3 exacta, texto extraíble, fuente
 incrustadas y ausencia de imágenes rasterizadas dentro del PDF.
 
 El constructor también falla si la línea de la serie temporal invade el área
-de una anotación directa, incluido un margen de seguridad alrededor del texto.
+de una anotación directa o si la flecha principal queda a menos de ocho puntos
+de cualquiera de los dos números destacados.
 El control de inscripción verifica el límite de 200 palabras, los campos
 obligatorios, las fuentes abiertas, la declaración de IA y el anonimato.
