@@ -17,8 +17,9 @@ territorio y edad está validado. El análisis ampliado confirma un cambio de
 composición etaria en las 24 jurisdicciones. La entrega se plantea como una
 Historia visual estática de una página, diferenciada de las proyecciones
 educativas oficiales ya publicadas. El storyboard **El corrimiento** fue
-seleccionado después de comparar tres alternativas. El título es provisorio y no
-se atribuyen causas sin evidencia compatible.
+seleccionado después de comparar tres alternativas. El prototipo visual v0.1 en
+SVG y PNG ya está generado, inspeccionado y marcado como no presentable. El
+título es provisorio y no se atribuyen causas sin evidencia compatible.
 
 ## Principios de trabajo
 

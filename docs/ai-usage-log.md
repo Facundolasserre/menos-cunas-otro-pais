@@ -19,6 +19,10 @@ por las bases del concurso.
   matriz de evaluación y generación de un wireframe estructural no final. La
   selección, el refinamiento gráfico y la aprobación de la obra permanecen bajo
   intervención humana.
+- Asistencia en la programación del prototipo vectorial v0.1, definición del
+  sistema visual y automatización de controles de dimensiones, contraste,
+  etiquetas e integridad. El archivo se identifica como prototipo y requiere
+  revisión humana e impresión antes de convertirse en entrega.
 
 ## Límites adoptados
 

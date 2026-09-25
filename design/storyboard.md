@@ -48,8 +48,7 @@ No se reducirá tipografía para forzar contenido en una dimensión arbitraria.
 
 - Eje temporal completo y escala cuantitativa explícita.
 - Etiquetas directas sólo en 2014, 2019, 2020 y 2024.
-- Anotación principal: **“La pandemia aceleró una tendencia que ya estaba en
-  marcha.”**
+- Anotación principal: **“La caída ya estaba en marcha antes de 2020.”**
 - Referencias: −19,5% entre 2014 y 2019; −14,7% interanual en 2020; −22,5%
   adicional entre 2020 y 2024.
 - No se dibujará una línea causal ni una banda denominada “efecto pandemia”.
@@ -96,7 +95,7 @@ causas ni convertir una proyección en certeza:
 
 > Cohortes más pequeñas ya están modificando la planificación educativa. Un
 > [informe oficial](https://www.argentina.gob.ar/node/477046) proyecta 27% menos estudiantes de primaria entre 2025 y 2030
-> —1,17 millones—. Es una proyección externa basada en RENAPER, no una extensión
+> —1,17 millones menos—. Es una proyección externa basada en RENAPER, no una extensión
 > de la serie DEIS.
 
 La fuente aparecerá junto a la frase, no escondida en el pie.

@@ -80,3 +80,13 @@ evidencia visible para las 24 jurisdicciones. El gráfico principal será un
 dumbbell de la proporción de nacimientos de madres de 30 años o más, no un mapa.
 La elección obtuvo 96/100 en una matriz ponderada por rigor, impacto,
 originalidad, síntesis, evidencia territorial y riesgo de producción.
+
+## 2026-09-25 - Prototipo visual v0.1
+
+Se adoptó A3 vertical como formato de prueba, con SVG vectorial maestro y PNG a
+240 ppp. La paleta usa fondo cálido, tinta oscura, neutral para 2014 y azul
+petróleo para 2024. El acento supera contraste AA y evita el significado de
+alarma asociado al rojo evaluado inicialmente. La proyección educativa se
+mantiene en tinta para distinguir su fuente externa. El prototipo fue aceptado
+como línea de base, pero conserva la marca “NO PRESENTAR” hasta superar pruebas
+impresas, simulaciones cromáticas, revisión del título y reemplazo del seudónimo.

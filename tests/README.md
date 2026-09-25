@@ -24,6 +24,8 @@ Los controles de datos ya implementados son:
 - `scripts/validation/validate_storyboard_claims.py`, que recalcula desde los
   indicadores cada cifra seleccionada para la narrativa y comprueba su presencia
   en el storyboard;
+- `scripts/validation/validate_storyboard_prototype.py`, que verifica archivos,
+  checksums, dimensiones, contraste, texto vectorial y etiquetas del prototipo;
 - `scripts/validation/check_repo_safety.sh`, que impide versionar datos locales,
   documentos privados, secretos o archivos demasiado grandes.
 

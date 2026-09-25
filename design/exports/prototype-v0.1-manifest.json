@@ -1,0 +1,28 @@
+{
+  "prototype": "v0.1",
+  "status": "not_for_submission",
+  "canvas": {
+    "format": "A3 portrait",
+    "width_mm": 297,
+    "height_mm": 420,
+    "png_width_px": 2805,
+    "png_height_px": 3969
+  },
+  "files": {
+    "prototype-v0.1.svg": {
+      "bytes": 52393,
+      "sha256": "cfbd24b3d573a7bea7cfd181a11927938eae8e3a07716703bd2ee370fffccfe1"
+    },
+    "prototype-v0.1.png": {
+      "bytes": 617358,
+      "sha256": "01b8e3e825bafb9fb241ffbc4b72246547ffa256cd0dd4c4932c0a620713cf5e"
+    }
+  },
+  "palette": {
+    "background": "#F7F4EC",
+    "ink": "#1C252B",
+    "accent_2024": "#0F6370",
+    "neutral_2014": "#6B665E",
+    "grid": "#D8D2C7"
+  }
+}

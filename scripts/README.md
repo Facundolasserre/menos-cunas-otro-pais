@@ -65,3 +65,14 @@ Las cifras elegidas para el storyboard se controlan antes de cada prototipo con:
 El control recalcula magnitudes, períodos, composición nacional, extremos
 provinciales y excepciones modales, y comprueba que los valores redondeados
 aparezcan en `design/storyboard.md`.
+
+El primer prototipo vectorial se construye y valida con:
+
+```bash
+.venv/bin/python scripts/design/build_storyboard_prototype.py
+.venv/bin/python scripts/validation/validate_storyboard_prototype.py
+```
+
+El constructor genera SVG, PNG y un manifiesto con dimensiones, paleta,
+checksums y estado. El validador controla relación A3, integridad, contraste,
+texto vectorial, etiquetas indispensables y ausencia de imágenes incrustadas.
